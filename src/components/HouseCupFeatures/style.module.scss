@@ -1,0 +1,36 @@
+@import "../../css/theme.scss";
+
+//Text Styles
+.title {
+    color: $tertiaryColor;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-top: 1px;
+    border-style: solid;
+    border-color: $borderColor;
+    width: 30%;
+    padding: 15px 0;
+}
+@media (min-width: 575px) {
+    .title {
+        width: 15%;
+    }
+}
+.boldText {
+    display: inline;
+}
+.paragraph {
+    display: inline;
+}
+
+//Scaffolding
+.col {
+    font-size: $h6mobile;
+    margin: 10px 0;
+}
+@media (min-width: 575px) {
+    .col {
+        margin: 0px 0;
+        font-size: $h6;
+    }
+}

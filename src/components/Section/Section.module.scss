@@ -1,0 +1,36 @@
+@import '../../css/theme.scss';
+
+
+//Section Styles and Types
+.section  {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    &--primary {
+        background-color: #fff;
+    }
+
+    &--secondary {
+        // background-color: #F3F5F6;
+    }
+    &--dark {
+        background-color: linear-gradient(45deg, rgba(0,168,168,1) 0%, rgba(87,255,151,1) 100%);
+    }
+    &--normal {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    &--xsmall {
+        padding: 20px 0;
+    }
+    &--small {
+        padding: 40px 0;
+    }
+    &--big {
+        padding: 80px 0;
+    }
+    &--special {
+        padding-top: 80px;
+        padding-bottom: 0;
+    }
+}

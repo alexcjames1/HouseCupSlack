@@ -1,0 +1,60 @@
+.button  {
+    color: #565656;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 0.875em;
+    display: inline-block;
+
+    &--primary {
+        color: var(--primaryColor);
+        text-transform: uppercase;
+        border: 1px solid;
+        border-radius: 4px;
+        padding: 0.625rem;
+    }
+    @media (min-width: 768px) {
+        &--primary:hover {
+            transform: scale(1.05);
+        }
+    }
+    &--link {
+        text-decoration: none;
+        line-height: 0.875em;
+        background: transparent;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    @media (min-width: 768px) {
+        &--link:hover {
+            text-decoration: underline;
+        }
+        &--link:visited {
+            color: #1c3359;
+        }
+    }
+    &--cta {
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    @media (min-width: 768px) {
+        &--cta {
+            font-weight: 900;
+            line-height: 1.125rem;
+            text-transform: uppercase;
+            background: #fff;
+            border-radius: 4px;
+        }
+    }
+    &--large {
+        padding: 1rem;
+    }
+    &--xsmall {
+        padding: 20px 0;
+    }
+    &--small {
+        padding: 40px 0;
+    }
+    &--big {
+        padding: 80px 0;
+    }
+}

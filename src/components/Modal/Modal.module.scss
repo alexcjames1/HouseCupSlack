@@ -1,0 +1,8 @@
+@import "../../css/theme.scss";
+
+.modal {
+    border-radius: 4px;
+    background-color: $modalBackground;
+    box-shadow: $boxShadow;
+    align-items: center;
+}

@@ -1,0 +1,41 @@
+@import "reset";
+@import "theme";
+@import "bootstrap-grid.min.css";
+
+
+* {
+    box-sizing: border-box;
+}
+html {
+    --baseFontSize: 16px;
+}
+body {
+    font-family: "poppins";
+    overflow-x: hidden;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0.375em 0;
+    line-height: 1.6;
+}
+@media (min-width: 768px) {
+    p {
+        margin: 0.625em 0;
+    }
+}
+.lead {
+    font-size: 1.1rem;
+}
+img {
+    max-width: 100%;
+}
+
+
+// bootstrap
+
+.container {
+    margin: 0 auto;
+}

@@ -1,0 +1,89 @@
+@import "../../css/theme.scss";
+
+//Div Container Styles
+.footer__SlackCTA  {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+}
+@media (min-width: 768px) {
+    .footer__SlackCTA  {
+        
+    }
+}
+
+//Media Figure Styles
+.mediaFigure {
+    width: 125px;
+    height: 125px;
+    margin-right: 50px;
+}
+@media (min-width: 992px) {
+    .mediaFigure {
+        margin-left: 0px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+//Text Styles
+.title {
+    font-size: $h3mobile;
+    color: $baseFontColor;
+    margin: 0.5em 0;
+}
+@media (min-width: 768px) {
+    font-size: $h3;
+}
+.content {
+    color: $secondaryColor;
+    font-size: $secondaryParagraphMobile;
+}
+@media (min-width: 768px) {
+    .content {
+        max-width: 100%;
+        font-size: $secondaryParagraph;
+    }
+}
+@media (min-width: 992px) {
+    .content {
+        max-width: 60%;
+    }
+}
+.subTitle {
+    color: rgba(43,41,45,0.6);
+    font-size: $specialSizeMobile;
+    padding-top: 15px;
+}
+@media (min-width: 575px) {
+    .subTitle {
+        font-size: $specialSize;
+        padding-top: 10px;
+    }
+}
+
+//Button Styles
+.button {
+    @include ButtonThin;
+    margin-right: 5px;
+    font-size: $specialSize;
+}
+.button:hover {
+    box-shadow: $shadowHover;
+}
+.slackButton {
+    background-color: $darkButton;
+    color: $darkBackground;
+}
+.githubButton {
+    background-color: $lightButton;
+    color: $baseFontColor;
+}
+
+
+//Footer Styles
+.footer  {
+    padding-top: 30px;
+}

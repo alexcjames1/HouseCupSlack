@@ -1,0 +1,87 @@
+@import "../../css/theme.scss";
+
+//Section/Background Styles
+.section {
+    background: url("./images/hero.jpg") no-repeat;
+    background-size: cover;
+    background-position: left 0px bottom 0px;
+    height: 530px;
+}
+@media (min-width: 575px) {
+    .section {
+        background-position: left 00px bottom 0px;
+        height: 700px;
+    }
+}
+@media (min-width: 992px) {
+    .section {
+        background-position: right 00px bottom 0px;
+        height: 830px;
+    }
+}
+
+//CTA Container Styles
+.CTA {
+    margin-top: 60px;
+}
+@media (min-width: 575px) {
+    .CTA {
+        margin-top: 70px;
+    }
+}
+@media (min-width: 768px) {
+    .CTA {
+        margin-top: 95px;
+    }
+}
+
+//Text Styles
+.title {
+    color: $baseFontColor;
+    font-size: $h1mobile;
+}
+@media (min-width: 575px) {
+    .title{
+        font-size: $h1;
+    }
+}
+.content{
+    color: $secondaryColor;
+    font-size: $primaryParagraphMobile;
+    max-width: 90%;
+    padding: 10px 0;
+}
+@media (min-width: 575px) {
+    .content {
+        max-width: 65%;
+        font-size: $primaryParagraph;
+    }
+}
+
+//Footer Styles
+.footer {
+    display: none
+}
+@media (min-width: 575px) {
+    .footer {
+        display: contents
+    }
+}
+
+//Button Styles
+.button {
+    background-color: $lightButton;
+    @include Button;
+    color: $baseFontColor;
+    font-weight: $bold;
+    font-size: 13px;
+}
+.button img {
+    width: 22px;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-bottom: -6px;
+}
+.button:hover {
+    box-shadow: $boxShadow;
+}

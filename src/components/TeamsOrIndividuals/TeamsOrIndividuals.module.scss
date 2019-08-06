@@ -1,0 +1,52 @@
+@import "../../css/theme.scss";
+
+//Scaffolding
+.section {
+    background-color: $secondaryBackgroundColor;
+}
+.section .row {
+    align-items: center;
+}
+
+//Text Container Styles
+.teamInfo {
+    margin-top: 30px;
+}
+@media (min-width: 575px) {
+    .teamInfo {
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+}
+
+//Text Styles
+.subTitle {
+    font-weight: $bold;
+    color: $tertiaryColor;
+    font-size: $h5mobile;
+}
+@media (min-width: 575px) {
+    .subTitle {
+        font-size: $h5;
+    }
+}
+.title {
+    font-size: $h3mobile;
+    color: $baseFontColor;
+    margin: 0.5em 0;
+}
+@media (min-width: 575px) {
+    .title {
+        font-size: $h3;
+    }
+}
+.content {
+    color: $secondaryColor;
+    font-size: $secondaryParagraphMobile;
+}
+@media (min-width: 575px) {
+    .content {
+        color: $secondaryColor;
+        font-size: $secondaryParagraph;
+    }
+}

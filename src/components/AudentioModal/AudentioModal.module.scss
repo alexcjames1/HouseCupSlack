@@ -1,0 +1,140 @@
+@import "../../css/theme.scss";
+
+//Modal Navigation
+.modalNavigation {
+    padding-top: 50px;
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+}
+.close {
+    margin-left: auto;
+    color: $baseFontColor;
+}
+.closeButton {
+    text-align: right;
+}
+.backButton {
+    color: $darkButton;
+}
+
+//Scaffolding
+@media (min-width: 575px) {
+    .section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+.row {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.col {
+    border-top: solid;
+    border-color: $borderColor;
+    border-width: 1px;
+    margin-top: 45px;
+    padding-top: 35px;
+    align-items: center;
+}
+@media (min-width: 575px) {
+    .col {
+        border-left: solid;
+        border-color: $borderColor;
+        border-width: 1px;
+        border-top: none;
+        padding-top: 0px;
+        margin-top: 0px;
+
+    }
+}
+
+//Text Styles
+.heading {
+    font-size: $h4;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+.heading h4 {
+    font-weight: $special;
+}
+.subheading {
+    font-size: $h5;
+}
+.subheading h5 {
+    font-weight: $special;
+}
+.content {
+    margin-bottom: 40px;
+}
+@media (min-width: 575px) {
+    .content {
+        max-width: 70%;
+    }
+}
+
+//Button Styles
+.learnMoreButton {
+    background-color: $darkButton;
+    color: #fff;
+    @include ButtonThin;
+}
+.learnMoreButton:hover {
+    box-shadow: $shadowHover;
+}
+
+//Card Styles
+.card {
+    @include border;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+.card:hover {
+    border-color: transparent;
+    background-color: #fff;
+    box-shadow: $boxShadow;
+}
+.card .cardContent {
+    padding: 20px;
+}
+
+//Icon Styles
+.icon {
+    @include icon;
+}
+.helpIcon {
+    background-color: $helpColor;
+}
+
+//Button Styles
+.buttonHelp {
+    color: $helpColor;
+    position: absolute;
+    bottom: 0;
+    left: 3;
+    padding-bottom: 30px;
+}
+.buttonHelp:hover {
+    text-decoration: $underlineHover;
+}
+
+//Footer Styles
+.modalFooter {
+    text-align: center;
+}
+.modalFooter h6 {
+    font-weight: $special;
+}
+.modalFooter p {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}

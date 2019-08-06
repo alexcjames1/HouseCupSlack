@@ -1,0 +1,26 @@
+@import "../../css/theme.scss";
+
+.button {
+    background-color: $lightButton;
+    @include Button;
+    border-radius: 4px;
+    color: $baseFontColor;
+    font-weight: $bold;
+    font-size: 13px;
+}
+.button:hover {
+    box-shadow: $boxShadow;
+}
+.button img {
+    width: 22px;
+    margin-right: 7px;
+    margin-top: 10px;
+    margin-bottom: -6px;
+}
+.nav {
+    text-align: right;
+    margin-top: 6px;
+}
+.modal {
+    background: green;
+}

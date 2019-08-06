@@ -1,0 +1,59 @@
+@import "../../css/theme.scss";
+
+//Div Container Styles
+.legal {
+    display: flex;
+    margin-top: 120px;
+    width: 470px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media (min-width: 575px) {
+    .legal {
+        width: 550px;
+        margin-top: 140px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+@media (min-width: 768px) {
+    .legal {
+        width: 730px;
+        margin-top: 115px;
+    }
+}
+@media (min-width: 992px) {
+    .legal {
+        width: 1200px;
+        margin-top: 180px;
+        margin-right: 20%;
+    }
+}
+@media (min-width: 1200px) {
+    .legal {
+        width: 1440px;
+    }
+}
+
+//Copyright Styles
+.copyright {
+    font-size: 0.75rem;
+    color: $darkBackground;
+}
+.audentio {
+    color: $darkBackground;
+    text-decoration: underline;
+}
+
+//Social Media Icons
+.socialMedia {
+    margin-left: auto;
+}
+.socialMedia li {
+    display: inline;
+}
+.socialMedia a {
+    color: $darkBackground;
+    padding: 0.375rem;
+    display: inline-block;
+}

@@ -1,0 +1,26 @@
+.media {
+    display: flex;
+    margin-right: 1.25rem;
+}
+.media--column {
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+@media (min-width:768px) {
+    margin-bottom: 0;
+}
+.textAlign--center {
+    text-align: center;
+}
+.media__subtitle {
+    color: #6B7C93;
+}
+.media__title {
+    color: #6B7C93;
+}
+.media--column p {
+    color: #6B7C93;
+}
+.media__figure img {
+    width: 120px;
+}

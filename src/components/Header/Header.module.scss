@@ -1,0 +1,16 @@
+@import "../../css/theme.scss";
+
+//Header Styles
+.header {
+    background: #fce7cf;
+    margin-bottom: -4.375em;
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1;
+    color: $baseFontColor;
+}
+.header.is-sticky {
+    background-color: var(--tertiaryColor);
+    transition: ease-in .2s background;
+}

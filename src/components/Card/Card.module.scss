@@ -1,0 +1,62 @@
+@import "../../css/theme.scss";
+
+//Card Styles
+.card {
+    border-radius: 4px;
+    box-shadow: $boxShadow;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .card {
+        padding: 0.625rem;
+    }
+}
+
+//Media Styles
+.media {
+    display: flex;
+    margin-right: 1.25rem;
+    align-items: center;
+    padding: 1.25rem;
+}
+
+//Media Figure
+.mediaFigure {
+    height: 105px;
+    width: 300px;
+    margin-right: 30px;
+    background-color: lightgrey;
+}
+
+//Media Heading
+.mediaHeading {
+    font-weight: $bold;
+    font-size: $h6mobile;
+}
+@media (min-width: 768px) {
+    .mediaHeading {
+        font-size: $h6;
+    }
+}
+
+//Media Body
+.mediaBody {
+    color: $baseFontColor;
+    font-size: $secondaryParagraphMobile;
+}
+@media (min-width: 768px) {
+    .mediaBody {
+        font-size: $secondaryParagraph;
+    }
+}
+
+//Media Button
+.mediaButton {
+    color: $tertiaryColor;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.mediaButton:hover {
+    text-decoration: $underlineHover;
+}

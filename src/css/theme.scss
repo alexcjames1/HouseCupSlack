@@ -1,0 +1,110 @@
+//background-colors
+$primaryColor: #D5C0A3;
+$secondaryBackgroundColor: #87b7bf;
+$modalBackground: #fff;
+
+//font-families
+$fontFamily: "Poppins";
+
+//font-colors
+$baseFontColor: #212121;
+$secondaryColor: #424242;
+$tertiaryColor: #337B9C;
+$darkBackground: #fff;
+
+//button colors
+$lightButton: #fff;
+$darkButton: #347C9D;
+
+//font-weights
+$normal: 400;
+$special: 600;
+$bold: 700;
+
+//font-sizes--Desktop
+$h1: 3.75rem;
+$h2: 2.875rem;
+$h3: 2.125rem;
+$h4: 1.5rem;
+$h5: 1.375rem;
+$h6: 1rem;
+
+$primaryParagraph: 1.125rem;
+$secondaryParagraph: 1rem;
+
+$specialSize: 0.875rem;
+
+//font-sizes--Mobile
+$h1mobile: 2.8125rem;
+$h2mobile: 1.875rem;
+$h3mobile: 1.75rem;
+$h4mobile: 1.5rem;
+$h5mobile: 1.125rem;
+$h6mobile: 0.875rem;
+
+$primaryParagraphMobile: 0.875rem;
+$secondaryParagraphMobile: 0.75rem;
+
+$specialSizeMobile: 0.75rem;
+
+//special-properties
+$boxShadow: 0 5px 15px 0 rgba(0,0,0,0.07),
+            0 15px 35px 0 rgba(50,50,93,0.1);
+
+//border-styles
+$borderColor: #d9d7d7;
+@mixin border {
+    border-color: $borderColor;
+    border-radius: 15px;
+    border-width: .5px;
+    border-style: solid;
+    height: 250px;
+}
+@mixin borderHover {
+    background-color: #fff;
+    border-style: none;
+}
+
+//button-styles
+@mixin Button {
+    padding: 15px 8px;
+    border-radius: 4px;
+}
+@mixin ButtonThin {
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+//button-responsiveness
+$shadowHover: 0 5px 15px 0 rgba(0,0,0,0.07),
+              0 15px 35px 0 rgba(50,50,93,0.1);
+$underlineHover: underline;
+//icon-styles
+@mixin icon {
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    box-shadow: 1px 2px 25px 0 rgba(0,0,0,0.05);
+    border-radius: 8px;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -25px;
+    margin-left: 18px;
+}
+
+
+//icon-colors
+//help-icon-color
+$helpColor: #F7BC14;
+
+//get-icon-color
+$getColor: #84C5B4;
+
+//contribute-icon-color
+$contributeColor: #337B9C;
+
+//share-icon-color
+$shareColor: #374365;
