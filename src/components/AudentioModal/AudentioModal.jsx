@@ -9,9 +9,6 @@ import { Section } from '../../components';
 export default class AudentioModal extends Component {
     render() {
         return(
-            <div className={style.audentioModal}>
-                <Section className={style.section} kind="primary" size="normal">
-                    <Modal className={style.modal}>
                         <div className={style.audentio}>
                             <Row className={style.modalNavigation}>
                                 <Col>
@@ -69,9 +66,6 @@ export default class AudentioModal extends Component {
                                 </Col>
                             </Row>
                         </div>
-                    </Modal>
-                </Section>
-            </div>
         );
     }
 }

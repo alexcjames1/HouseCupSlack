@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Heading, Header, AppWrapper, Dashboard, DownloadModal, Testcomponent, AudentioModal, HouseCupHero, HouseCupFeatures, TeamsOrIndividuals, FinalThingsToClick, JoinTogether, Footer} from '../../components';
+import {Heading, Header, AppWrapper, Dashboard, HouseCupHero, HouseCupFeatures, TeamsOrIndividuals, FinalThingsToClick, JoinTogether, Footer} from '../../components';
 import {Helmet} from "react-helmet";
 
 export default class Home extends Component {
@@ -13,10 +13,7 @@ export default class Home extends Component {
             <JoinTogether />
             <HouseCupFeatures />
             <TeamsOrIndividuals />
-            <DownloadModal />
-            <AudentioModal />
             <FinalThingsToClick />
-            <Testcomponent />
           </AppWrapper>
         );
     }
