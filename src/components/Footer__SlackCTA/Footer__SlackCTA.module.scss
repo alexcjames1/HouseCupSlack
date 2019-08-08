@@ -10,7 +10,7 @@
 }
 @media (min-width: 768px) {
     .footer__SlackCTA  {
-        
+
     }
 }
 
@@ -69,6 +69,10 @@
     @include ButtonThin;
     margin-right: 5px;
     font-size: $specialSize;
+}
+button {
+    background-color: transparent;
+    border-style: none;
 }
 .button:hover {
     box-shadow: $shadowHover;

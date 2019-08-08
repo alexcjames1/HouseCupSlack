@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import classy from '../../utils/classy';
 import style from './style.module.scss';
-import {Col, Row, Container } from 'react-bootstrap';
+import {Col, Row } from 'react-bootstrap';
 import { Section } from '../../components';
 
 export default class HouseCupFeatures extends Component {

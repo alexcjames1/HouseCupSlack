@@ -79,9 +79,27 @@
 .button img {
     width: 22px;
     margin-right: 7px;
-    margin-top: 10px;
     margin-bottom: -6px;
 }
 .button:hover {
     box-shadow: $boxShadow;
+}
+
+:global {
+    .skylight-dialog {
+        margin-left: -43% !important;
+        margin-top: -375px !important;
+        width: 87% !important;
+
+    }
+    @media (min-width: 575px) {
+        .skylight-dialog {
+            height: 760px;
+        }
+    }
+    @media (min-width: 768px)  {
+        .skylight-dialog {
+            width: 70%;
+        }
+    }
 }

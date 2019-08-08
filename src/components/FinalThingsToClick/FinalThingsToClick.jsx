@@ -9,9 +9,11 @@ export default class FinalThingsToClick extends Component {
     render() {
         return(
             <Section className={style.section} kind="primary" size="normal">
+
                 <div className={style.title}>
                     <h4>How We Do Culture</h4>
                 </div>
+
                 <Row>
                     <Col xs="12" sm="6" className={style.teamBuilding}>
                         <Card  title="How We Do: Team Building" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
@@ -20,6 +22,7 @@ export default class FinalThingsToClick extends Component {
                         <Card  title="Focus on the Fun Stuff" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
                     </Col>
                 </Row>
+
             </Section>
         );
     }

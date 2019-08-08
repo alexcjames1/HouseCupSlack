@@ -69,10 +69,12 @@ $borderColor: #d9d7d7;
 @mixin Button {
     padding: 15px 8px;
     border-radius: 4px;
+    border-color: transparent;
 }
 @mixin ButtonThin {
     padding: 10px 15px;
     border-radius: 6px;
+    border-color: transparent;
 }
 
 //button-responsiveness

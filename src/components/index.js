@@ -1,6 +1,5 @@
 export { default as AppWrapper } from './AppWrapper';
 export { default as Heading } from './Heading';
-export { default as MediaComponent } from './MediaComponent';
 export { default as Section } from './Section';
 export { default as Button } from './Button';
 export { default as Card } from './Card';
@@ -11,9 +10,6 @@ export { default as Logo } from './Logo';
 
 export { default as DownloadModal } from './DownloadModal';
 export { default as AudentioModal } from './AudentioModal';
-export { default as Modal } from './Modal';
-export { default as ModalTest } from './ModalTest';
-export { default as Testcomponent } from './Testcomponent';
 
 export { default as JoinTogether } from './JoinTogether';
 export { default as HouseCupHero } from './HouseCupHero';

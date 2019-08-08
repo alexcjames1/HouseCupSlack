@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import classy from '../../utils/classy';
 import style from './HouseCupHero.module.scss';
 import slackLogo from './images/slack-logo-icon.png';
-import {Col, Row, Container } from 'react-bootstrap';
+import {Col, Row } from 'react-bootstrap';
 import { Section } from '../../components';
 import Modal from 'react-skylight';
 import { DownloadModal } from '../../components';
@@ -17,12 +17,8 @@ export default class HouseCupHero extends Component {
     render() {
 
         var modalStyles = {
-          backgroundColor: '#fff',
           color: '#000',
           borderRadius: '6px',
-          width: '70%',
-          marginTop: '-300px',
-          marginLeft: '-35%',
         };
 
         return(
@@ -40,9 +36,9 @@ export default class HouseCupHero extends Component {
                         </div>
                         <div>
                             <section>
-                                    <a href="#" onClick={() => this.customDialog.show()} className={style.button}>
+                                    <button onClick={() => this.customDialog.show()} className={style.button}>
                                         <img src={slackLogo}/>Add to Slack
-                                    </a>
+                                    </button>
                             </section>
                             <div className={style.audentioModal}>
                                     <Modal dialogStyles={modalStyles} hideOnOverlayClicked ref={ref => this.customDialog = ref}>

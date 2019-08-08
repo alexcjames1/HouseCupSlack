@@ -2,10 +2,26 @@ import React, {Component} from 'react';
 import classy from '../../utils/classy';
 import style from './Footer__SlackCTA.module.scss';
 import botLogo from './images/bot-logo.png';
-// import {Col, Row, Container } from 'react-bootstrap';
+import Modal from 'react-skylight';
+import { DownloadModal } from '../../components';
 
 export default class Footer__SlackCTA extends Component {
+
+    constructor(props){
+      super(props);
+    }
+
     render() {
+
+        var modalStyles = {
+          backgroundColor: '#fff',
+          color: '#000',
+          borderRadius: '6px',
+          width: '70%',
+          marginTop: '-20.3%',
+          marginLeft: '-35%',
+        };
+
         return(
             <div className={style.footer__SlackCTA}>
 
@@ -27,15 +43,20 @@ export default class Footer__SlackCTA extends Component {
                         </p>
                     </div>
                     <div className={style.footer}>
-                        <a href="https://www.slack.com/" target="_blank" className={classy(style.button, style.slackButton)}>
+                        <button onClick={() => this.customDialog.show()} className={classy(style.button, style.slackButton)}>
                             <i className="mdi mdi-slack" /> Add to slack
-                        </a>
-                        <a href="https://github.com/" target="_blank" className={classy(style.button, style.githubButton)}>
-                            Contribute to GitHub
-                        </a>
+                        </button>
+                        <button>
+                            <a href="https://github.com/" target="_blank" className={classy(style.button, style.githubButton)}>
+                                Contribute to GitHub
+                            </a>
+                        </button>
                         <p className={style.subTitle}>
                             Free to use · Easy setup · Open source
                         </p>
+                        <Modal dialogStyles={modalStyles} hideOnOverlayClicked ref={ref => this.customDialog = ref}>
+                            <DownloadModal />
+                        </Modal>
                     </div>
                 </div>
 

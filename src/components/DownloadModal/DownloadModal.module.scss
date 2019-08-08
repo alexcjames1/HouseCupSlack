@@ -33,6 +33,9 @@
     margin-right: auto;
     text-align: center;
 }
+.body p{
+    line-height: 1.3em;
+}
 @media (min-width: 575px) {
     .lead {
         max-width: 60%;
@@ -40,22 +43,69 @@
 }
 
 //Scaffolding
-.col {
+.card {
     @include border;
-    height: 200px;
-    margin: 30px auto;
+    height: 170px;
+    width: 170px;
+    margin: 30px 0;
 }
-@media (min-width: 575px) {
-    margin: 0;
+@media (min-width: 768px) {
+    .card {
+        margin: 3px;
+    }
 }
-.col:hover {
+@media (min-width: 1055px) {
+    .card {
+        height: 185px;
+        width: 185px;
+    }
+}
+@media (min-width: 1124px) {
+    .card {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .card {
+        margin: 3px;
+        height: 215px;
+        width: 215px;
+    }
+}
+@media (min-width: 1353px) {
+    .card {
+        height: 250px;
+        width: 250px;
+    }
+}
+.card:hover {
     @include borderHover;
     box-shadow: $boxShadow;
 }
 .row {
     margin-top: 50px;
     margin-bottom: 50px;
-    flex-basis: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    justify-content: center;
+}
+@media (min-width: 837px) {
+    .row {
+        flex-basis: 500px;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .col {
+        display: flex;
+    }
+}
+.content {
+    padding: 0 20px;
 }
 
 //Base Icon Styles
@@ -82,8 +132,12 @@
 .button  {
     position: absolute;
     bottom: 0;
-    left: 3;
-    padding-bottom: 15px;
+    padding-bottom: 335px;
+}
+@media (min-width: 1353px) {
+    .button  {
+        padding-bottom: 315px;
+    }
 }
 .button:hover {
     text-decoration: $underlineHover;
@@ -123,120 +177,3 @@
 .modalFooter a {
     color: #347C9D;
 }
-
-
-
-
-
-
-// 
-// <Section className={style.section} kind="primary" size="normal">
-//     <Modal>
-//
-//         <div className={style.modalNavigation}>
-//             <a href="#" className={style.close}>
-//                 <i className="mdi mdi-close" />
-//             </a>
-//         </div>
-//
-//         <div className={style.download}>
-//             <div className={style.header}>
-//                 <h5 className={style.heading}>
-//                     Thank you for using HouseCup.gg!
-//                 </h5>
-//                 <p className={style.lead}>
-//                     Ut dui felis, elementum quis urna et, porttitor consequat nisl. Sed libero lorem, hendrerit a egestas auctor, posuere sit amet ex.
-//                 </p>
-//             </div>
-//
-//             <Row className={style.row}>
-//
-//                 <Col xs="12" sm="3" className={style.col}>
-//                     <div className={classy(style.icon, style.helpIcon)}><i className="mdi mdi-comment-question-outline" /></div>
-//                     <div className={style.content}>
-//                         <div className={style.contentHeader}>
-//                             <h6>
-//                                 I need help
-//                             </h6>
-//                         </div>
-//                         <div className={style.body}>
-//                             <p>Need this installed for you? We do not offer a SaaS yet.</p>
-//                         </div>
-//                         <div className={style.footer}>
-//                             <a href="#" className={classy(style.button, style.buttonHelp)}>
-//                                 Get help <i className="mdi mdi-arrow-right" />
-//                             </a>
-//                         </div>
-//                     </div>
-//                 </Col>
-//
-//                 <Col xs="12" sm="3" className={style.col}>
-//                     <div className={classy(style.icon, style.getIcon)}><i className="mdi mdi-share-variant" /></div>
-//                         <div className={style.content}>
-//                         <div className={style.contentHeader}>
-//                             <h6>
-//                                 I can do it myself
-//                             </h6>
-//                         </div>
-//                         <div className={style.body}>
-//                             <p>Here are some instructions for getting this done on your own.</p>
-//                         </div>
-//                         <div className={style.footer}>
-//                             <a href="#" className={classy(style.button, style.buttonGet)}>
-//                                 Read instructions <i className="mdi mdi-arrow-right" />
-//                             </a>
-//                         </div>
-//                     </div>
-//                 </Col>
-//
-//                 <Col xs="12" sm="3" className={style.col}>
-//                     <div className={classy(style.icon, style.contributeIcon)}><i className="mdi mdi-square-edit-outline" /></div>
-//                         <div className={style.content}>
-//                             <div className={style.contentHeader}>
-//                                 <h6>
-//                                     Contribute
-//                                 </h6>
-//                             </div>
-//                             <div className={style.body}>
-//                                 <p>Please also consider contributing to this open source project.</p>
-//                             </div>
-//                             <div className={style.footer}>
-//                                 <a href="#" className={classy(style.button, style.buttonContribute)}>
-//                                     Contribute <i className="mdi mdi-arrow-right" />
-//                                 </a>
-//                             </div>
-//                         </div>
-//                 </Col>
-//
-//                 <Col xs="12" sm="3" className={style.col}>
-//                     <div className={classy(style.icon, style.shareIcon)}><i className="mdi mdi-share-variant" /></div>
-//                         <div className={style.content}>
-//                         <div className={style.contentHeader}>
-//                             <h6>
-//                                 Share
-//                             </h6>
-//                         </div>
-//                         <div className={style.body}>
-//                             <p>Want to say thanks or share with your friends?</p>
-//                         </div>
-//                         <div className={style.footer}>
-//                             <a href="#" className={classy(style.button, style.buttonShare)}>
-//                                 Share <i className="mdi mdi-arrow-right" />
-//                             </a>
-//                         </div>
-//                     </div>
-//                 </Col>
-//
-//             </Row>
-//
-//             <div className={style.modalFooter}>
-//                 <h6>Donate to St. Jude</h6>
-//                 <p>Ut dui felis, elementum quis urna et, porttitor consequat nisl. Sed libero lorem, hendrerit a egestas auctor, posuere sit amet ex. </p>
-//                 <a href="#">
-//                     Donate <i className="mdi mdi-arrow-right" />
-//                 </a>
-//             </div>
-//         </div>
-//
-//     </Modal>
-// </Section>
