@@ -53,11 +53,11 @@ export default class HouseCupHero extends Component {
                 <div className={style.treeForeground}>
                     <img src={tree} className={style.tree}/>
                 </div>
-                <div className={style.cloudTreeLine}>
-                    <img src={cloudLeft} className={style.cloudLeft}/>
-                </div>
                 <div className={style.cloudCastle}>
                     <img src={cloudRight} className={style.cloudRight}/>
+                </div>
+                <div className={style.cloudTreeLine}>
+                    <img src={cloudLeft} className={style.cloudLeft}/>
                 </div>
                 <div className={style.lake}></div>
                 <div className={style.treeLines}>

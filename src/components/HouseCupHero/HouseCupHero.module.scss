@@ -1,5 +1,24 @@
 @import "../../css/theme.scss";
 
+//animations
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(5px, 0);
+  }
+  50% {
+    transform: translate(10px, 0);
+  }
+  75% {
+    transform: translate(15px, 0);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
 .background {
     background: url("./images/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -18,12 +37,25 @@
     margin-bottom: -30px;
 }
 .cloudLeft {
-    padding-bottom: 30px;
-    margin-left: 600px;
+    margin-left: 630px;
+    width: 260px;
+    height: 260px;
+    animation:
+        float 5s linear infinite alternate;
 }
 .cloudRight {
     position: relative;
     z-index: 1000;
+    max-width: 18%;
+    margin-left: 82%;
+    padding-bottom: 170px;
+    width: 260px;
+    height: 260px;
+    animation:
+        float 5s linear infinite alternate;
+}
+.treeForeground  {
+    margin-bottom: -295px;
 }
 .castle {
     margin-right: -20px;
@@ -46,21 +78,16 @@
     max-width:  20%;
     margin-left: 400px;
 }
-.cloudCastle {
-    max-width: 20%;
-    text-align: right;
-
-}
 .lake {
     background: url("./images/black-lake.svg");
     height: 100px;
     margin-bottom: -250px;
-    margin-left: -17px;
+    margin-left: -22px;
 }
 .crestHero {
     text-align: right;
     margin-right: 510px;
-    margin-bottom: -50px;
+    margin-bottom: -220px;
 }
 .crest {
     visibility: hidden;
