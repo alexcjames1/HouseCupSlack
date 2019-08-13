@@ -80,6 +80,15 @@
     color: #fff;
     margin-right: 3px;
 }
+.slackButton:hover {
+    background-color: #306f8c;
+    border-left: 1px #1b4d63;
+    border-right: 1px #1b4d63;
+    border-top: 1px #1b4d63;
+    border-bottom: 3px #1b4d63;
+    border-style: solid;
+    border-radius: 4px;
+}
 .slackLogo {
     width: 18px;
     margin-right: 7px;
@@ -94,6 +103,15 @@
     border-style: solid;
     border-radius: 4px;
     color: #424242;
+}
+.githubButton:hover {
+    background-color: #fcfcfc;
+    border-left: 1px #d6d6d6;
+    border-right: 1px #d6d6d6;
+    border-top: 1px #d6d6d6;
+    border-bottom: 3px #d6d6d6;
+    border-style: solid;
+    border-radius: 4px;
 }
 
 
