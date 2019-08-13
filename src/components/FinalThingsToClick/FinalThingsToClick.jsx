@@ -11,7 +11,7 @@ export default class FinalThingsToClick extends Component {
             <Section className={style.section} kind="primary" size="normal">
 
                 <div className={style.title}>
-                    <h4>How We Do Culture</h4>
+                    <h3>How We Do Culture</h3>
                 </div>
 
                 <Row>

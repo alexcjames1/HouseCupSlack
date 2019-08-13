@@ -10,10 +10,6 @@
     z-index: 1;
     color: $baseFontColor;
 }
-.header.is-sticky {
-    background-color: var(--tertiaryColor);
-    transition: ease-in .2s background;
-}
 .row {
     align-items: center;
 }

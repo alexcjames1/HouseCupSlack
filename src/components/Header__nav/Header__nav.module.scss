@@ -1,44 +1,10 @@
 @import "../../css/theme.scss";
 
-// .button {
-//     background-color: $lightButton;
-//     @include Button;
-//     color: $baseFontColor;
-//     font-weight: $bold;
-//     font-size: 13px;
-//     margin-left: 40%;
-// }
-// @media (min-width: 551px) {
-//     .button {
-//         margin-left: 47%;
-//     }
-// }
-// @media (min-width: 768px) {
-//     .button {
-//         margin-left: 61%;
-//     }
-// }
-// @media (min-width: 992px) {
-//     .button {
-//         margin-left: 72%;
-//     }
-// }
-// @media (min-width: 1200px) {
-//     .button {
-//         margin-left: 76%;
-//     }
-// }
-// .button:hover {
-//     box-shadow: $boxShadow;
-// }
-// .button img {
-//     width: 22px;
-//     margin-right: 7px;
-//     margin-bottom: -6px;
-//
-// }
 .button {
     @include slackButtonHero;
+}
+.button:hover {
+    @include slackButtonHeroHover;
 }
 .slackLogo {
     width: 18px;

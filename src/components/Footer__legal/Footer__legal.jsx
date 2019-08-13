@@ -6,33 +6,15 @@ import Modal from 'react-skylight';
 import { AudentioModal } from '../../components';
 
 export default class Footer__legal extends Component {
-
-    constructor(props){
-      super(props);
-    }
-
     render() {
-
-        var modalStyles = {
-          backgroundColor: '#fff',
-          color: '#000',
-          borderRadius: '6px',
-          width: '70%',
-          marginTop: '-12%',
-          marginLeft: '-35%',
-        };
-
         return(
             <Row>
 
                 <div className={style.legal}>
                     <div>
                         <p className={style.copyright}>
-                            Made with <i className="mdi mdi-heart"></i> by <button onClick={() => this.customDialog.show()} className={style.audentio}>Audentio</button>
+                            Made with <i className="mdi mdi-heart"></i> by <button className={style.audentio}>Audentio</button>
                         </p>
-                        <Modal dialogStyles={modalStyles} hideOnOverlayClicked ref={ref => this.customDialog = ref}>
-                            <AudentioModal />
-                        </Modal>
                     </div>
                     <div className={style.socialMedia}>
                         <ul className={style.socialMediaLinks}>

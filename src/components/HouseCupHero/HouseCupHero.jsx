@@ -6,7 +6,6 @@ import {Col, Row, Container } from 'react-bootstrap';
 import { Section } from '../../components';
 import Modal from 'react-skylight';
 import { DownloadModal } from '../../components';
-import apple from './images/app-store.png';
 
 import lake from './images/black-lake.svg';
 import frontTreeline from './images/front-treeline.png';
@@ -20,18 +19,7 @@ import crest from './images/crest.svg';
 
 
 export default class HouseCupHero extends Component {
-
-    constructor(props){
-      super(props);
-    }
-
     render() {
-
-        var modalStyles = {
-          color: '#000',
-          borderRadius: '6px',
-        };
-
         return(
             <div className={style.background}>
                 <Col xs="12" sm="4" className={style.content}>
@@ -44,31 +32,31 @@ export default class HouseCupHero extends Component {
                     <div className={style.footer}>
                         <a href="#" className={style.slackButton}>
                             <img src={slackLogo} className={style.slackLogo}/>Add to Slack
-                        </a>
+                            </a>
+                        </div>
+                    </Col>
+                    <div className={style.crestHero}>
+                        <img src={crest} className={style.crest}/>
                     </div>
-                </Col>
-                <div className={style.crestHero}>
-                    <img src={crest} className={style.crest}/>
+                    <div className={style.treeForeground}>
+                        <img src={tree} className={style.tree}/>
+                    </div>
+                    <div className={style.cloudCastle}>
+                        <img src={cloudRight} className={style.cloudRight}/>
+                    </div>
+                    <div className={style.cloudTreeLine}>
+                        <img src={cloudLeft} className={style.cloudLeft}/>
+                    </div>
+                    <div className={style.lake}></div>
+                    <div className={style.treeLines}>
+                        <img src={backTreeline} className={style.backTreeline}/>
+                        <img src={frontTreeline} className={style.frontTreeline}/>
+                    </div>
+                    <div className={style.mainHill}>
+                        <img src={castle} className={style.castle}/>
+                        <img src={mainDarkHill} className={style.mainDarkHill}/>
+                    </div>
                 </div>
-                <div className={style.treeForeground}>
-                    <img src={tree} className={style.tree}/>
-                </div>
-                <div className={style.cloudCastle}>
-                    <img src={cloudRight} className={style.cloudRight}/>
-                </div>
-                <div className={style.cloudTreeLine}>
-                    <img src={cloudLeft} className={style.cloudLeft}/>
-                </div>
-                <div className={style.lake}></div>
-                <div className={style.treeLines}>
-                    <img src={backTreeline} className={style.backTreeline}/>
-                    <img src={frontTreeline} className={style.frontTreeline}/>
-                </div>
-                <div className={style.mainHill}>
-                    <img src={castle} className={style.castle}/>
-                    <img src={mainDarkHill} className={style.mainDarkHill}/>
-                </div>
-            </div>
         );
     }
 }

@@ -24,83 +24,83 @@ export default class downloadModal extends React.Component {
                     <div className={style.row}>
 
                         <div className={style.col}>
-                        <div className={style.card}>
-                            <div className={classy(style.icon, style.helpIcon)}><i className="mdi mdi-comment-question-outline" /></div>
-                            <div className={style.content}>
-                                <div className={style.contentHeader}>
-                                    <h5>
-                                        I need help
-                                    </h5>
-                                </div>
-                                <div className={style.body}>
-                                    <p>Need this installed for you? We do not offer a SaaS yet.</p>
-                                </div>
-                                <div className={style.footer}>
-                                     <a href="#" className={classy(style.button, style.buttonHelp)}>
-                                         Get help <i className="mdi mdi-arrow-right" />
-                                     </a>
-                                </div>
-                            </div>
+                            <div className={style.card}>
+                                <div className={classy(style.icon, style.helpIcon)}><i className="mdi mdi-comment-question-outline" /></div>
+                                <div className={style.content}>
+                                    <div className={style.contentHeader}>
+                                        <h5>
+                                            I need help
+                                        </h5>
+                                    </div>
+                                    <div className={style.body}>
+                                        <p>Need this installed for you? We do not offer a SaaS yet.</p>
+                                    </div>
+                                    <div className={style.footer}>
+                                         <a href="#" className={classy(style.button, style.buttonHelp)}>
+                                             Get help <i className="mdi mdi-arrow-right" />
+                                         </a>
+                                     </div>
+                                 </div>
                             </div>
 
                             <div className={style.card}>
-                            <div className={classy(style.icon, style.getIcon)}><i className="mdi mdi-download" /></div>
-                            <div className={style.content}>
-                                <div className={style.contentHeader}>
-                                    <h5>
-                                        I can do it myself
-                                    </h5>
-                                </div>
-                                <div className={style.body}>
-                                    <p>Here are some instructions for getting this done on your own.</p>
-                                </div>
-                                <div className={style.footer}>
-                                     <a href="#" className={classy(style.button, style.buttonGet)}>
-                                         Read instructions <i className="mdi mdi-arrow-right" />
-                                     </a>
+                                <div className={classy(style.icon, style.getIcon)}><i className="mdi mdi-download" /></div>
+                                <div className={style.content}>
+                                    <div className={style.contentHeader}>
+                                        <h5>
+                                            I can do it myself
+                                        </h5>
+                                    </div>
+                                    <div className={style.body}>
+                                        <p>Here are some instructions for getting this done on your own.</p>
+                                    </div>
+                                    <div className={style.footer}>
+                                         <a href="#" className={classy(style.button, style.buttonGet)}>
+                                             Read instructions <i className="mdi mdi-arrow-right" />
+                                         </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
 
                         <div className={style.col}>
                             <div className={style.card}>
-                            <div className={classy(style.icon, style.contributeIcon)}><i className="mdi mdi-square-edit-outline" /></div>
-                            <div className={style.content}>
-                                <div className={style.contentHeader}>
-                                    <h5>
-                                        Contribute
-                                    </h5>
-                                </div>
-                                <div className={style.body}>
-                                    <p>Please also consider contributing to this open source project.</p>
-                                </div>
-                                <div className={style.footer}>
-                                     <a href="#" className={classy(style.button, style.buttonContribute)}>
-                                         Contribute <i className="mdi mdi-arrow-right" />
-                                     </a>
+                                <div className={classy(style.icon, style.contributeIcon)}><i className="mdi mdi-square-edit-outline" /></div>
+                                <div className={style.content}>
+                                    <div className={style.contentHeader}>
+                                        <h5>
+                                            Contribute
+                                        </h5>
+                                    </div>
+                                    <div className={style.body}>
+                                        <p>Please also consider contributing to this open source project.</p>
+                                    </div>
+                                    <div className={style.footer}>
+                                         <a href="#" className={classy(style.button, style.buttonContribute)}>
+                                             Contribute <i className="mdi mdi-arrow-right" />
+                                         </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                             <div className={style.card}>
-                            <div className={classy(style.icon, style.shareIcon)}><i className="mdi mdi-share-variant" /></div>
-                            <div className={style.content}>
-                                <div className={style.contentHeader}>
-                                    <h5>
-                                        Share
-                                    </h5>
-                                </div>
-                                <div className={style.body}>
-                                    <p>Want to say thanks or share with your friends?</p>
-                                </div>
-                                <div className={style.footer}>
-                                     <a href="#" className={classy(style.button, style.buttonShare)}>
-                                         Share <i className="mdi mdi-arrow-right" />
-                                     </a>
+                                <div className={classy(style.icon, style.shareIcon)}><i className="mdi mdi-share-variant" /></div>
+                                <div className={style.content}>
+                                    <div className={style.contentHeader}>
+                                        <h5>
+                                            Share
+                                        </h5>
+                                    </div>
+                                    <div className={style.body}>
+                                        <p>Want to say thanks or share with your friends?</p>
+                                    </div>
+                                    <div className={style.footer}>
+                                         <a href="#" className={classy(style.button, style.buttonShare)}>
+                                             Share <i className="mdi mdi-arrow-right" />
+                                         </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
 

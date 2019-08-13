@@ -19,6 +19,7 @@
   }
 }
 
+//containers
 .background {
     background: url("./images/hero-bg.jpg");
     background-repeat: no-repeat;
@@ -32,10 +33,26 @@
     text-align: right;
     z-index: 100px;
 }
+.treeForeground  {
+    margin-bottom: -295px;
+}
+.treeLines {
+    margin-bottom: -910px;
+    margin-left: -5px;
+}
+.crestHero {
+    text-align: right;
+    margin-right: 510px;
+    margin-bottom: -220px;
+}
+
+//hill
 .mainDarkHill {
     margin-right: -30px;
     margin-bottom: -30px;
 }
+
+//clouds
 .cloudLeft {
     margin-left: 630px;
     width: 260px;
@@ -54,23 +71,19 @@
     animation:
         float 5s linear infinite alternate;
 }
-.treeForeground  {
-    margin-bottom: -295px;
-}
+
+//castle
 .castle {
     margin-right: -20px;
     margin-bottom: -160px;
 }
+
+//tree lines
 .backTreeline {
     margin-bottom: -400px;
 }
-.treeLines {
-    margin-bottom: -910px;
-    margin-left: -5px;
-}
-.foregroundObjects {
-    text-align: right;
-}
+
+//tree
 .tree {
     margin-bottom: -410px;
     position: relative;
@@ -78,17 +91,16 @@
     max-width:  20%;
     margin-left: 400px;
 }
+
+//lake
 .lake {
     background: url("./images/black-lake.svg");
     height: 100px;
     margin-bottom: -250px;
     margin-left: -22px;
 }
-.crestHero {
-    text-align: right;
-    margin-right: 510px;
-    margin-bottom: -220px;
-}
+
+//crest
 .crest {
     visibility: hidden;
 }
@@ -99,9 +111,12 @@
     }
 }
 
-
-
-
+//Hero CTA content
+.content {
+    margin-left: 20%;
+    margin-right: auto;
+    margin-bottom: -300px;
+}
 .header {
     font-size: $heroBigFont;
     font-weight: $black;
@@ -116,13 +131,11 @@
 .slackButton {
     @include slackButtonHero;
 }
+.slackButton:hover {
+    @include slackButtonHeroHover;
+}
 .slackLogo {
     width: 18px;
     margin-right: 7px;
     margin-bottom: -3px;
-}
-.content {
-    margin-left: 20%;
-    margin-right: auto;
-    margin-bottom: -300px;
 }
