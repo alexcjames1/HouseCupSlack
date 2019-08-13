@@ -20,22 +20,22 @@
 //Text Styles
 .subTitle {
     color: $tertiaryColor;
-    font-size: $h5mobile;
+    font-size: $h4mobile;
 }
 @media (min-width: 768px) {
     .subTitle {
-        font-size: $h5;
+        font-size: $h4;
     }
 }
 .title {
     color: #212121;
-    font-size: $h2mobile;
+    font-size: $h1mobile;
     margin: 0.5em 0;
     line-height: 1.2em;
 }
 @media (min-width: 768px) {
     .title {
-        font-size: $h2;
+        font-size: $h1;
     }
 }
 .content {

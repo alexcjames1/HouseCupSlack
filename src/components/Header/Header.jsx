@@ -11,17 +11,15 @@ export default class Header extends Component {
         return(
             <header className={style.header}>
                 <Section>
-                    <Row>
+                    <Row className={style.row}>
 
                         <Col xs="6" sm="6">
-                            <div className="logo">
-                                <a href="#">
+                            <div className={style.logo}>
                                     <Logo />
-                                </a>
                             </div>
                         </Col>
 
-                        <Col xs="6" sm="6">
+                        <Col xs="6" sm="6" className={style.navigation}>
                             <Header__nav />
                         </Col>
 

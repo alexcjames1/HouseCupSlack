@@ -14,3 +14,13 @@
     background-color: var(--tertiaryColor);
     transition: ease-in .2s background;
 }
+.row {
+    align-items: center;
+}
+.logo {
+    padding-top: 9px;
+    margin-left: -5px;
+}
+.navigation {
+    text-align: right;
+}

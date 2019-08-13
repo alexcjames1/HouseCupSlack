@@ -3,12 +3,12 @@
 //Text Styles
 .title {
     text-align: center;
-    font-size: $h4mobile;
+    font-size: $h3mobile;
     margin-bottom: 30px;
 }
 @media (min-width: 575px) {
     .title {
-        font-size: $h4;
+        font-size: $h3;
     }
 }
 

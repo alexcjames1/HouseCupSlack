@@ -21,8 +21,8 @@
 
 //Text Styles
 .heading {
-    font-size: $h5;
-    font-weight: $special;
+    font-size: $h4;
+    font-weight: $bold;
     text-align: center;
 }
 .lead {
@@ -161,8 +161,8 @@
 .modalFooter {
     text-align: center;
 }
-.modalFooter h6 {
-    font-weight: $special;
+.modalFooter h5 {
+    font-weight: $bold;
 }
 .modalFooter p {
     max-width: 85%;

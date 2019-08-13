@@ -13,9 +13,9 @@ export default class downloadModal extends React.Component {
 
                 <div className={style.download}>
                     <div className={style.header}>
-                        <h5 className={style.heading}>
+                        <h4 className={style.heading}>
                             Thank you for using HouseCup.gg!
-                        </h5>
+                        </h4>
                         <p className={style.lead}>
                             Ut dui felis, elementum quis urna et, porttitor consequat nisl. Sed libero lorem, hendrerit a egestas auctor, posuere sit amet ex.
                         </p>
@@ -28,9 +28,9 @@ export default class downloadModal extends React.Component {
                             <div className={classy(style.icon, style.helpIcon)}><i className="mdi mdi-comment-question-outline" /></div>
                             <div className={style.content}>
                                 <div className={style.contentHeader}>
-                                    <h6>
+                                    <h5>
                                         I need help
-                                    </h6>
+                                    </h5>
                                 </div>
                                 <div className={style.body}>
                                     <p>Need this installed for you? We do not offer a SaaS yet.</p>
@@ -47,9 +47,9 @@ export default class downloadModal extends React.Component {
                             <div className={classy(style.icon, style.getIcon)}><i className="mdi mdi-download" /></div>
                             <div className={style.content}>
                                 <div className={style.contentHeader}>
-                                    <h6>
+                                    <h5>
                                         I can do it myself
-                                    </h6>
+                                    </h5>
                                 </div>
                                 <div className={style.body}>
                                     <p>Here are some instructions for getting this done on your own.</p>
@@ -69,9 +69,9 @@ export default class downloadModal extends React.Component {
                             <div className={classy(style.icon, style.contributeIcon)}><i className="mdi mdi-square-edit-outline" /></div>
                             <div className={style.content}>
                                 <div className={style.contentHeader}>
-                                    <h6>
+                                    <h5>
                                         Contribute
-                                    </h6>
+                                    </h5>
                                 </div>
                                 <div className={style.body}>
                                     <p>Please also consider contributing to this open source project.</p>
@@ -87,9 +87,9 @@ export default class downloadModal extends React.Component {
                             <div className={classy(style.icon, style.shareIcon)}><i className="mdi mdi-share-variant" /></div>
                             <div className={style.content}>
                                 <div className={style.contentHeader}>
-                                    <h6>
+                                    <h5>
                                         Share
-                                    </h6>
+                                    </h5>
                                 </div>
                                 <div className={style.body}>
                                     <p>Want to say thanks or share with your friends?</p>
@@ -105,7 +105,7 @@ export default class downloadModal extends React.Component {
                     </div>
 
                     <div className={style.modalFooter}>
-                        <h6>Donate to St. Jude</h6>
+                        <h5>Donate to St. Jude</h5>
                         <p>Ut dui felis, elementum quis urna et, porttitor consequat nisl. Sed libero lorem, hendrerit a egestas auctor, posuere sit amet ex. </p>
                         <a href="#">
                             Donate <i className="mdi mdi-arrow-right" />

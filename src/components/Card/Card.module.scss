@@ -31,11 +31,11 @@
 //Media Heading
 .mediaHeading {
     font-weight: $bold;
-    font-size: $h6mobile;
+    font-size: $h5mobile;
 }
 @media (min-width: 768px) {
     .mediaHeading {
-        font-size: $h6;
+        font-size: $h5;
     }
 }
 

@@ -1,105 +1,101 @@
 @import "../../css/theme.scss";
 
-//Section/Background Styles
-.section {
-    background: url("./images/hero.jpg") no-repeat;
+.background {
+    background: url("./images/hero-bg.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: left 0px bottom 0px;
-    height: 530px;
+    overflow: hidden;
+    padding-top: 300px;
 }
-@media (min-width: 575px) {
-    .section {
-        background-position: left 00px bottom 0px;
-        height: 700px;
-    }
-}
-@media (min-width: 992px) {
-    .section {
-        background-position: right 00px bottom 0px;
-        height: 830px;
-    }
-}
-
-//CTA Container Styles
-.CTA {
-    margin-top: 60px;
-}
-@media (min-width: 575px) {
-    .CTA {
-        margin-top: 70px;
-    }
-}
-@media (min-width: 768px) {
-    .CTA {
-        margin-top: 95px;
-    }
-}
-
-//Text Styles
-.title {
-    color: $baseFontColor;
-    font-size: $h1mobile;
-}
-@media (min-width: 575px) {
-    .title{
-        font-size: $h1;
-    }
-}
-.content{
-    color: $secondaryColor;
-    font-size: $primaryParagraphMobile;
+.mainHill {
+    margin-left: auto;
     max-width: 90%;
-    padding: 10px 0;
+    text-align: right;
+    z-index: 100px;
 }
-@media (min-width: 575px) {
-    .content {
-        max-width: 65%;
-        font-size: $primaryParagraph;
+.mainDarkHill {
+    margin-right: -30px;
+    margin-bottom: -30px;
+}
+.cloudLeft {
+    padding-bottom: 30px;
+    margin-left: 600px;
+}
+.cloudRight {
+    position: relative;
+    z-index: 1000;
+}
+.castle {
+    margin-right: -20px;
+    margin-bottom: -160px;
+}
+.backTreeline {
+    margin-bottom: -400px;
+}
+.treeLines {
+    margin-bottom: -910px;
+    margin-left: -5px;
+}
+.foregroundObjects {
+    text-align: right;
+}
+.tree {
+    margin-bottom: -410px;
+    position: relative;
+    z-index: 1000;
+    max-width:  20%;
+    margin-left: 400px;
+}
+.cloudCastle {
+    max-width: 20%;
+    text-align: right;
+
+}
+.lake {
+    background: url("./images/black-lake.svg");
+    height: 100px;
+    margin-bottom: -250px;
+    margin-left: -17px;
+}
+.crestHero {
+    text-align: right;
+    margin-right: 510px;
+    margin-bottom: -50px;
+}
+.crest {
+    visibility: hidden;
+}
+@media (min-width: 1650px) {
+    .crest {
+        visibility: visible;
+        height: 450px;
     }
 }
 
-//Footer Styles
-.footer {
-    display: none
-}
-@media (min-width: 575px) {
-    .footer {
-        display: contents
-    }
-}
 
-//Button Styles
-.button {
-    background-color: $lightButton;
-    @include Button;
+
+
+.header {
+    font-size: $heroBigFont;
+    font-weight: $black;
     color: $baseFontColor;
-    font-weight: $bold;
-    font-size: 13px;
 }
-.button img {
-    width: 22px;
+.body {
+    font-size: 18px;
+    color: #424242;
+    padding-bottom: 15px;
+    max-width: 80%;
+}
+.slackButton {
+    @include slackButtonHero;
+}
+.slackLogo {
+    width: 18px;
     margin-right: 7px;
-    margin-bottom: -6px;
+    margin-bottom: -3px;
 }
-.button:hover {
-    box-shadow: $boxShadow;
-}
-
-:global {
-    .skylight-dialog {
-        margin-left: -43% !important;
-        margin-top: -375px !important;
-        width: 87% !important;
-
-    }
-    @media (min-width: 575px) {
-        .skylight-dialog {
-            height: 760px;
-        }
-    }
-    @media (min-width: 768px)  {
-        .skylight-dialog {
-            width: 70%;
-        }
-    }
+.content {
+    margin-left: 20%;
+    margin-right: auto;
+    margin-bottom: -300px;
 }

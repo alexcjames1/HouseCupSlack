@@ -10,28 +10,28 @@ export default class HouseCupFeatures extends Component {
             <Section className={style.section} kind="secondary" size="normal">
 
                 <div className={style.title}>
-                    <h6>
+                    <h5>
                         Features
-                    </h6>
+                    </h5>
                 </div>
 
                 <Row>
                     <Col xs="12" sm="4" className={style.col}>
-                        <h6 className={style.boldText}>Add and remove points. </h6>
+                        <h5 className={style.boldText}>Add and remove points. </h5>
                         <p className={style.paragraph}>
                             Nam feugiat lorem non ullamcorper hendrerit. Aenean leo metus, lacinia ut suscipit eu.
                         </p>
                     </Col>
 
                     <Col xs="12" sm="4" className={style.col}>
-                        <h6 className={style.boldText}>Stay up to  date with  stats. </h6>
+                        <h5 className={style.boldText}>Stay up to  date with  stats. </h5>
                         <p className={style.paragraph}>
                             Nam feugiat lorem non ullamcorper hendrerit. Aenean leo metus, lacinia ut suscipit eu.
                         </p>
                     </Col>
 
                     <Col xs="12" sm="4" className={style.col}>
-                        <h6 className={style.boldText}>Start and end semesters. </h6>
+                        <h5 className={style.boldText}>Start and end semesters. </h5>
                         <p className={style.paragraph}>
                             Nam feugiat lorem non ullamcorper hendrerit. Aenean leo metus, lacinia ut suscipit eu.
                         </p>

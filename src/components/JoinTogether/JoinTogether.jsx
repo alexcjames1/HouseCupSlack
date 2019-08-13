@@ -13,11 +13,11 @@ export default class JoinTogether extends Component {
 
                     <Col xs="12" sm="6">
                         <div className={style.header}>
-                            <h5 className={style.subTitle}>
+                            <h4 className={style.subTitle}>
                                 Join together, win together
-                            </h5>
+                            </h4>
                             <div className={style.title}>
-                                <h2>Bring competitive magic to your slack</h2>
+                                <h1>Bring competitive magic to your slack</h1>
                             </div>
                         </div>
                         <div className={style.content}>

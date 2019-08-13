@@ -22,11 +22,11 @@ export default class TeamsOrIndividuals extends Component {
 
                     <Col xs="12" sm="5" className={style.teamInfo}>
                         <div className={style.header}>
-                            <h5 className={style.subTitle}>
+                            <h4 className={style.subTitle}>
                                 Join together, Win together
-                            </h5>
+                            </h4>
                             <div className={style.title}>
-                                <h3>Teams or individuals can join houses.</h3>
+                                <h2>Teams or individuals can join houses.</h2>
                             </div>
                         </div>
                         <div className={style.content}>

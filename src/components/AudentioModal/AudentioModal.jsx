@@ -24,10 +24,10 @@ export default class AudentioModal extends Component {
                         <Col xs="12" sm="6">
                             <div className={style.header}>
                                 <div className={style.heading}>
-                                    <h4>Audentio</h4>
+                                    <h3>Audentio</h3>
                                 </div>
                                 <div className={style.subheading}>
-                                    <h5>Who we are</h5>
+                                    <h4>Who we are</h4>
                                 </div>
                             </div>
                             <div className={style.content}>
@@ -47,9 +47,9 @@ export default class AudentioModal extends Component {
                                 <div className={classy(style.icon, style.helpIcon)}><i className="mdi mdi-comment-question-outline" /></div>
                                 <div className={style.cardContent}>
                                     <div className={style.contentHeader}>
-                                        <h6>
+                                        <h5>
                                             We install for you
-                                        </h6>
+                                        </h5>
                                     </div>
                                     <div className={style.body}>
                                         <p>We offer installation and setup for this product.</p>

@@ -2,10 +2,21 @@ import React, {Component} from 'react';
 import classy from '../../utils/classy';
 import style from './HouseCupHero.module.scss';
 import slackLogo from './images/slack-logo-icon.png';
-import {Col, Row } from 'react-bootstrap';
+import {Col, Row, Container } from 'react-bootstrap';
 import { Section } from '../../components';
 import Modal from 'react-skylight';
 import { DownloadModal } from '../../components';
+import apple from './images/app-store.png';
+
+import lake from './images/black-lake.svg';
+import frontTreeline from './images/front-treeline.png';
+import backTreeline from './images/back-treeline.png';
+import castle from './images/castle.png';
+import mainDarkHill from './images/main-ground.png';
+import tree from './images/tree.svg';
+import cloudLeft from './images/cloud-1.svg';
+import cloudRight from './images/cloud-2.svg';
+import crest from './images/crest.svg';
 
 
 export default class HouseCupHero extends Component {
@@ -22,34 +33,42 @@ export default class HouseCupHero extends Component {
         };
 
         return(
-            <Section className={style.section} size="big">
-
-                <Row>
-                    <Col xs="12" sm="8" className={style.CTA}>
-                        <div className={style.header}>
-                            <h1 className={style.title}>
-                                Team up &amp; award house points.
-                            </h1>
-                        </div>
-                        <div className={style.content}>
-                            <p>In gravida ligula facilisis odio convallis, quis mollis nibh dignissim. In vehicula placerat malesuada. Praesent pharetra tincidunt est feugiat pharetra.</p>
-                        </div>
-                        <div>
-                            <section>
-                                    <button onClick={() => this.customDialog.show()} className={style.button}>
-                                        <img src={slackLogo}/>Add to Slack
-                                    </button>
-                            </section>
-                            <div className={style.audentioModal}>
-                                    <Modal dialogStyles={modalStyles} hideOnOverlayClicked ref={ref => this.customDialog = ref}>
-                                        <DownloadModal />
-                                    </Modal>
-                            </div>
-                        </div>
-                    </Col>
-                </Row>
-
-            </Section>
+            <div className={style.background}>
+                <Col xs="12" sm="4" className={style.content}>
+                    <div className={style.header}>
+                        Team up & award house points.
+                    </div>
+                    <div className={style.body}>
+                        <p>In gravida ligula facilisis odio convallis, quis mollis nibh dignissim. In vehicula placerat malesuada. Praesent pharetra tincidunt est feugiat pharetra.</p>
+                    </div>
+                    <div className={style.footer}>
+                        <a href="#" className={style.slackButton}>
+                            <img src={slackLogo} className={style.slackLogo}/>Add to Slack
+                        </a>
+                    </div>
+                </Col>
+                <div className={style.crestHero}>
+                    <img src={crest} className={style.crest}/>
+                </div>
+                <div className={style.treeForeground}>
+                    <img src={tree} className={style.tree}/>
+                </div>
+                <div className={style.cloudTreeLine}>
+                    <img src={cloudLeft} className={style.cloudLeft}/>
+                </div>
+                <div className={style.cloudCastle}>
+                    <img src={cloudRight} className={style.cloudRight}/>
+                </div>
+                <div className={style.lake}></div>
+                <div className={style.treeLines}>
+                    <img src={backTreeline} className={style.backTreeline}/>
+                    <img src={frontTreeline} className={style.frontTreeline}/>
+                </div>
+                <div className={style.mainHill}>
+                    <img src={castle} className={style.castle}/>
+                    <img src={mainDarkHill} className={style.mainDarkHill}/>
+                </div>
+            </div>
         );
     }
 }

@@ -7,11 +7,7 @@
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
-}
-@media (min-width: 768px) {
-    .footer__SlackCTA  {
-
-    }
+    justify-content: center;
 }
 
 //Media Figure Styles
@@ -30,27 +26,25 @@
 
 //Text Styles
 .title {
-    font-size: $h3mobile;
+    font-size: $h2mobile;
     color: $baseFontColor;
     margin: 0.5em 0;
 }
+.body {
+    max-width: 70%;
+}
 @media (min-width: 768px) {
-    font-size: $h3;
+    .title {
+        font-size: $h2;
+        color: $baseFontColor;
+        margin: 0.5em 0;
+        max-width: 85%;
+    }
 }
 .content {
     color: $secondaryColor;
-    font-size: $secondaryParagraphMobile;
-}
-@media (min-width: 768px) {
-    .content {
-        max-width: 100%;
-        font-size: $secondaryParagraph;
-    }
-}
-@media (min-width: 992px) {
-    .content {
-        max-width: 60%;
-    }
+    font-size: $secondaryParagraph;
+    max-width: 550px;
 }
 .subTitle {
     color: rgba(43,41,45,0.6);
@@ -66,28 +60,44 @@
 
 //Button Styles
 .button {
-    @include ButtonThin;
-    margin-right: 5px;
-    font-size: $specialSize;
+    padding: 10px 25px;
+    font-family: lato;
+    font-size: 14px;
+    font-weight: 900;
 }
-button {
-    background-color: transparent;
-    border-style: none;
-}
-.button:hover {
-    box-shadow: $shadowHover;
+.button i {
+    font-size: 20px;
+    margin-right: 3px;
 }
 .slackButton {
-    background-color: $darkButton;
-    color: $darkBackground;
+    background-color: #337B9C;
+    border-left: 1px #225b75;
+    border-right: 1px #225b75;
+    border-top: 1px #225b75;
+    border-bottom: 3px #225b75;
+    border-style: solid;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 3px;
+}
+.slackLogo {
+    width: 18px;
+    margin-right: 7px;
+    margin-bottom: -3px;
 }
 .githubButton {
-    background-color: $lightButton;
-    color: $baseFontColor;
+    background-color: #fff;
+    border-left: 1px #d9d9d9;
+    border-right: 1px #d9d9d9;
+    border-top: 1px #d9d9d9;
+    border-bottom: 3px #d9d9d9;
+    border-style: solid;
+    border-radius: 4px;
+    color: #424242;
 }
 
 
 //Footer Styles
 .footer  {
-    padding-top: 30px;
+    padding-top: 20px;
 }

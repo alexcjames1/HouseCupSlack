@@ -23,21 +23,21 @@
 .subTitle {
     font-weight: $bold;
     color: $tertiaryColor;
-    font-size: $h5mobile;
+    font-size: $h4mobile;
 }
 @media (min-width: 575px) {
     .subTitle {
-        font-size: $h5;
+        font-size: $h4;
     }
 }
 .title {
-    font-size: $h3mobile;
+    font-size: $h2mobile;
     color: $baseFontColor;
     margin: 0.5em 0;
 }
 @media (min-width: 575px) {
     .title {
-        font-size: $h3;
+        font-size: $h2;
     }
 }
 .content {

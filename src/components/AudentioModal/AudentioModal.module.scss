@@ -55,19 +55,19 @@
 
 //Text Styles
 .heading {
-    font-size: $h4;
+    font-size: $h3;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 30px;
 }
-.heading h4 {
-    font-weight: $special;
+.heading h3 {
+    font-weight: $bold;
 }
 .subheading {
-    font-size: $h5;
+    font-size: $h4;
 }
-.subheading h5 {
-    font-weight: $special;
+.subheading h4 {
+    font-weight: $bold;
 }
 .content {
     margin-bottom: 40px;
@@ -130,8 +130,8 @@
 .modalFooter {
     text-align: center;
 }
-.modalFooter h6 {
-    font-weight: $special;
+.modalFooter h5 {
+    font-weight: $bold;
 }
 .modalFooter p {
     max-width: 60%;

@@ -25,12 +25,12 @@
 
 //Scaffolding
 .col {
-    font-size: $h6mobile;
+    font-size: $h5mobile;
     margin: 10px 0;
 }
 @media (min-width: 575px) {
     .col {
         margin: 0px 0;
-        font-size: $h6;
+        font-size: $h5;
     }
 }
