@@ -29,7 +29,7 @@ export default class Footer__SlackCTA extends Component {
                         </p>
                     </div>
                     <div className={style.footer}>
-                        <a className={classy(style.button, style.slackButton)}>
+                        <a href="https://slack.com/" target="_blank" className={classy(style.button, style.slackButton)}>
                             <img src={slackLogoWhite} className={style.slackLogo}/> Add to slack
                         </a>
                         <a href="https://github.com/" target="_blank" className={classy(style.button, style.githubButton)}>

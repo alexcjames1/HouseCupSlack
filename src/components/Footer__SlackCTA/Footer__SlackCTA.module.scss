@@ -7,6 +7,9 @@
     margin-left: auto;
     margin-right: auto;
     flex-wrap: wrap;
+
+}
+@media (min-width: 768px) {
     justify-content: center;
 }
 
@@ -14,7 +17,7 @@
 .mediaFigure {
     width: 125px;
     height: 125px;
-    margin-right: 50px;
+    margin-left: -10px;
 }
 @media (min-width: 992px) {
     .mediaFigure {

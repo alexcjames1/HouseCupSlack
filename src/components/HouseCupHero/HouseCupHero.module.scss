@@ -19,103 +19,117 @@
   }
 }
 
-//containers
-.background {
+.HouseCupHero {
     background: url("./images/hero-bg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-    padding-top: 300px;
-}
-.mainHill {
-    margin-left: auto;
-    max-width: 90%;
-    text-align: right;
-    z-index: 100px;
-}
-.treeForeground  {
-    margin-bottom: -295px;
-}
-.treeLines {
-    margin-bottom: -910px;
-    margin-left: -5px;
-}
-.crestHero {
-    text-align: right;
-    margin-right: 510px;
-    margin-bottom: -220px;
-}
+    position: relative;
 
-//hill
+}
+.backTreeline {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -190px;
+    z-index: 99;
+    margin-left: -10px;
+}
+.frontTreeline {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    margin-bottom: -140px;
+    margin-left: -10px;
+}
 .mainDarkHill {
-    margin-right: -30px;
-    margin-bottom: -30px;
+    position: absolute;
+    bottom: 0;
+    z-index: 102;
+    right: 0;
+    margin-bottom: -20px;
+    margin-right: -50px;
 }
-
-//clouds
 .cloudLeft {
-    margin-left: 630px;
-    width: 260px;
-    height: 260px;
-    animation:
-        float 5s linear infinite alternate;
+    position: absolute;
+    z-index: 103;
+    left: 0;
+    margin-left: 33vw;
+    margin-top: -100px;
+    animation: float 5s linear infinite alternate;
 }
 .cloudRight {
-    position: relative;
-    z-index: 1000;
-    max-width: 18%;
-    margin-left: 82%;
-    padding-bottom: 170px;
-    width: 260px;
-    height: 260px;
-    animation:
-        float 5s linear infinite alternate;
-}
+    position: absolute;
+    z-index: 103;
+    right: 0;
+    margin-right: 100px;
+    margin-top: -500px;
+    animation: float 5s linear infinite alternate;
 
-//castle
+}
 .castle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 101;
+    margin-bottom: auto;
     margin-right: -20px;
-    margin-bottom: -160px;
 }
-
-//tree lines
-.backTreeline {
-    margin-bottom: -400px;
+@media (min-width: 1450px) {
+    .castle {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 101;
+        margin-bottom: 216px;
+        margin-right: -20px;
+    }
 }
-
-//tree
-.tree {
-    margin-bottom: -410px;
+.lake {
+    visibility: hidden;
+}
+@media (min-width: 1681px) {
+    .lake {
+        visibility: visible;
+        height: 165px;
+        margin-left: 49vw;
+        position: relative;
+        bottom: 0;
+        z-index: 98;
+    }
+}
+.row {
     position: relative;
     z-index: 1000;
-    max-width:  20%;
-    margin-left: 400px;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
-
-//lake
-.lake {
-    background: url("./images/black-lake.svg");
-    height: 100px;
-    margin-bottom: -250px;
-    margin-left: -22px;
+@media (min-width: 992px) {
+    .row {
+        margin-top: 250px;
+    }
 }
-
-//crest
 .crest {
     visibility: hidden;
 }
-@media (min-width: 1650px) {
+@media (min-width: 1770px) {
     .crest {
         visibility: visible;
-        height: 450px;
     }
 }
 
+
+// <img src={tree} className={style.tree}/>
 //Hero CTA content
 .content {
-    margin-left: 20%;
+    max-width: 1000px;
     margin-right: auto;
-    margin-bottom: -300px;
+    margin-bottom: -260px;
+}
+@media (min-width: 992px) {
+    .content {
+        margin-right: auto;
+        margin-bottom: -280px;
+    }
 }
 .header {
     font-size: $heroBigFont;
