@@ -8,7 +8,7 @@ import { Section } from '../../components';
 export default class JoinTogether extends Component {
     render() {
         return(
-            <Section className={style.section} kind="dark" size="small">
+            <Section className={style.section} kind="dark">
                 <Row className={style.row}>
 
                     <Col xs="12" sm="6">

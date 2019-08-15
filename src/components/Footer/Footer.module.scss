@@ -1,23 +1,26 @@
 @import "../../css/theme.scss";
 
-//Footer Styles
-.footer {
-    background-image: url("./images/footer-bg.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position: left 90px bottom 20px top 30px;
-    height: 550px;
+.icon {
+    display: inline;
+    padding: 12px;
+    font-size: 20px;
 }
-@media (min-width: 768px) {
-    .footer {
-        background-position: right 00px bottom 20px top 30px;
-        height: 550px;
-    }
+.icon a {
+    color: $darkBackground;
 }
-.cta {
-    display: block;
+.socialMedia {
+    text-align: right;
 }
 .legal {
-    display: block;
+    align-items:  center;
+}
+.copyright a{
+    font-size: 14px;
+    color: $darkBackground;
+}
+.legal {
+    margin-top: -50px;
+}
+.audentio {
+    text-decoration: underline;
 }

@@ -1,28 +1,132 @@
 @import "../../css/theme.scss";
 
-//Text Styles
-.title {
-    text-align: center;
-    font-size: $h3mobile;
-    margin-bottom: 30px;
+//Div Container Styles
+.footer__SlackCTA  {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    background-image: url("./images/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position: left 90px bottom 20px top 30px;
+    height: 550px;
+    padding-top: 80px;
+
 }
-@media (min-width: 575px) {
-    .title {
-        font-size: $h3;
+@media (min-width: 768px) {
+    .footer__SlackCTA {
+        background-position: right 00px bottom 20px top 30px;
+        height: 550px;
     }
 }
 
-//Card Styles
-.teamBuilding {
-    margin-bottom: 15px;
+//Media Figure Styles
+.mediaFigure {
+    width: 150px;
+    height: 150px;
 }
-@media (min-width: 575px) {
-    .teamBuilding {
-        margin-bottom: 0px;
+@media (min-width: 992px) {
+    .mediaFigure {
+        width: 250px;
+        height: 250px;
     }
 }
-@media (min-width: 575px) {
-    .teamBuilding {
-        margin-bottom: 0px;
+
+//Text Styles
+.title {
+    font-size: $h2mobile;
+    color: $baseFontColor;
+    margin: 0.5em 0;
+}
+.body {
+    max-width: 70%;
+}
+@media (min-width: 768px) {
+    .title {
+        font-size: $h2;
+        color: $baseFontColor;
+        margin: 0.5em 0;
+        max-width: 85%;
     }
+}
+.content {
+    color: $secondaryColor;
+    font-size: $secondaryParagraph;
+    max-width: 550px;
+}
+.subTitle {
+    color: rgba(43,41,45,0.6);
+    font-size: $specialSizeMobile;
+    padding-top: 15px;
+}
+@media (min-width: 575px) {
+    .subTitle {
+        font-size: $specialSize;
+        padding-top: 10px;
+    }
+}
+
+//Button Styles
+.button {
+    padding: 10px 25px;
+    font-family: lato;
+    font-size: 14px;
+    font-weight: 900;
+}
+.button i {
+    font-size: 20px;
+    margin-right: 3px;
+}
+.slackButton {
+    background-color: #337B9C;
+    border-left: 1px #225b75;
+    border-right: 1px #225b75;
+    border-top: 1px #225b75;
+    border-bottom: 3px #225b75;
+    border-style: solid;
+    border-radius: 4px;
+    color: #fff;
+    margin-right: 3px;
+}
+.slackButton:hover {
+    background-color: #306f8c;
+    border-left: 1px #1b4d63;
+    border-right: 1px #1b4d63;
+    border-top: 1px #1b4d63;
+    border-bottom: 3px #1b4d63;
+    border-style: solid;
+    border-radius: 4px;
+}
+.slackLogo {
+    width: 18px;
+    margin-right: 7px;
+    margin-bottom: -3px;
+}
+.githubButton {
+    background-color: #fff;
+    border-left: 1px #d9d9d9;
+    border-right: 1px #d9d9d9;
+    border-top: 1px #d9d9d9;
+    border-bottom: 3px #d9d9d9;
+    border-style: solid;
+    border-radius: 4px;
+    color: #424242;
+}
+.githubButton:hover {
+    background-color: #fcfcfc;
+    border-left: 1px #d6d6d6;
+    border-right: 1px #d6d6d6;
+    border-top: 1px #d6d6d6;
+    border-bottom: 3px #d6d6d6;
+    border-style: solid;
+    border-radius: 4px;
+}
+
+
+//Footer Styles
+.footer  {
+    padding-top: 20px;
 }

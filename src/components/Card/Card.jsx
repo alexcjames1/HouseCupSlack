@@ -19,7 +19,7 @@ export default class Card extends Component {
                     <div className={style.mediaContent}>
                         {title ? <Heading tag="h6" className={style.mediaHeading}>{title}</Heading> : ''}
                         {paragraph ? <p className={style.mediaBody}>{paragraph}</p> : ''}
-                        {button ? <Link className={style.mediaButton}>{button}</Link> : ''}
+                        {button ? <div className={style.mediaButton}>{button}</div> : ''}
                     </div>
                 </div>
             </div>

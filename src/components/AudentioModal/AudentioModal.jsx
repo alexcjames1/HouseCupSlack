@@ -3,6 +3,7 @@ import style from './AudentioModal.module.scss';
 import classy from '../../utils/classy';
 import {Col, Row, Container } from 'react-bootstrap';
 import { Section } from '../../components';
+import { Modal } from '../../components';
 
 export default class AudentioModal extends Component {
     render() {

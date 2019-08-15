@@ -3,8 +3,14 @@
 //Card Styles
 .card {
     border-radius: 4px;
-    box-shadow: $boxShadow;
     align-items: center;
+    border-style: solid;
+    border-color: $borderColor;
+    border-width: 1px;
+}
+.card:hover {
+    box-shadow: $boxShadow;
+    border-style: none;
 }
 @media (min-width: 768px) {
     .card {
@@ -59,4 +65,7 @@
 }
 .mediaButton:hover {
     text-decoration: $underlineHover;
+}
+.mediaContent {
+    color: #212121;
 }

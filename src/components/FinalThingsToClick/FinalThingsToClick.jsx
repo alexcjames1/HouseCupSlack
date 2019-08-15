@@ -1,29 +1,50 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import classy from '../../utils/classy';
 import style from './FinalThingsToClick.module.scss';
-import { Card } from '../';
-import { Col, Row, Container } from 'react-bootstrap';
-import { Section } from '../../components';
+import botLogo from './images/bot-logo.png';
+import slackLogoWhite from './images/slack-icon-white.png';
+import { Modal } from '../../components';
+import { DownloadModal } from  '../../components';
 
-export default class FinalThingsToClick extends Component {
+export default class Footer__SlackCTA extends Component {
     render() {
         return(
-            <Section className={style.section} kind="primary" size="normal">
+            <div className={style.footer__SlackCTA}>
 
-                <div className={style.title}>
-                    <h3>How We Do Culture</h3>
+                <div className={style.media}>
+                    <div className={style.mediaFigure}>
+                        <img src={botLogo} alt="#" />
+                    </div>
+                </div>
+                <div className={style.content}>
+                    <div className={style.header}>
+                        <div className={style.title}>
+                            <h2>Start winning house points</h2>
+                        </div>
+                    </div>
+                    <div className={style.body}>
+                        <p>
+                            Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor.
+                        </p>
+                    </div>
+                    <div className={style.footer}>
+                        <Modal trigger={
+                            <a className={classy(style.button, style.slackButton)}>
+                                <img src={slackLogoWhite} className={style.slackLogo}/> Add to slack
+                            </a>
+                        }>
+                            <DownloadModal />
+                        </Modal>
+                        <a href="https://github.com/" target="_blank" className={classy(style.button, style.githubButton)}>
+                            Contribute to GitHub
+                        </a>
+                        <p className={style.subTitle}>
+                            Free to use · Easy setup · Open source
+                        </p>
+                    </div>
                 </div>
 
-                <Row>
-                    <Col xs="12" sm="6" className={style.teamBuilding}>
-                        <Card  title="How We Do: Team Building" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
-                    </Col>
-                    <Col xs="12" sm="6" className={style.funStuff}>
-                        <Card  title="Focus on the Fun Stuff" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
-                    </Col>
-                </Row>
-
-            </Section>
+            </div>
         );
     }
 }

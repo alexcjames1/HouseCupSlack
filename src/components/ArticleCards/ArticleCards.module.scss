@@ -1,0 +1,28 @@
+@import "../../css/theme.scss";
+
+//Text Styles
+.title {
+    text-align: center;
+    font-size: $h3mobile;
+    margin-bottom: 30px;
+}
+@media (min-width: 575px) {
+    .title {
+        font-size: $h3;
+    }
+}
+
+//Card Styles
+.teamBuilding {
+    margin-bottom: 15px;
+}
+@media (min-width: 575px) {
+    .teamBuilding {
+        margin-bottom: 0px;
+    }
+}
+@media (min-width: 575px) {
+    .teamBuilding {
+        margin-bottom: 0px;
+    }
+}
