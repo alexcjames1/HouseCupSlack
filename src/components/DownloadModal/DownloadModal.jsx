@@ -9,9 +9,9 @@ export default class downloadModal extends React.Component {
 
   render () {
     return (
-        <Section className={style.section} kind="primary" size="normal">
+        <Section className={style.section} kind="primary" size="small">
 
-                <div className={style.download}>
+                <div className={style.setup}>
                     <div className={style.header}>
                         <h4 className={style.heading}>
                             Thank you for using HouseCup.gg!
@@ -107,8 +107,8 @@ export default class downloadModal extends React.Component {
                     <div className={style.modalFooter}>
                         <h5>Donate to St. Jude</h5>
                         <p>Ut dui felis, elementum quis urna et, porttitor consequat nisl. Sed libero lorem, hendrerit a egestas auctor, posuere sit amet ex. </p>
-                        <a href="#">
-                            Donate <i className="mdi mdi-arrow-right" />
+                        <a href="https://www.stjude.org/donate/donate-to-st-jude.html?sc_icid=wtg-lz-donatenow" target="_blank">
+                            <span className={style.donate}>Donate</span><i className="mdi mdi-arrow-right" />
                         </a>
                     </div>
                 </div>

@@ -30,7 +30,9 @@ export default class Modal extends Component {
                 <div className={classy(style.modal, this.state.isShowing == true && style.isOpen )}>
                     <div onClick={this.closeModalHandler} className={style.modalCloser}></div>
                     <div className={style.modalContent}>
-                        <i onClick={this.closeModalHandler} class="mdi mdi-close"></i>
+                        <div className={style.closeButton}>
+                            <i onClick={this.closeModalHandler} className="mdi mdi-close"></i>
+                        </div>
                         {this.props.children}
                     </div>
 

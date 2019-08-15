@@ -39,9 +39,9 @@ export default class HouseCupHero extends Component {
                         </div>
                         <div className={style.footer}>
                             <Modal trigger={
-                                <Link className={style.slackButton}>
+                                <a className={style.slackButton}>
                                     <img src={slackLogo} className={style.slackLogo}/>Add to Slack
-                                </Link>}
+                                </a>}
                             >
                                 <DownloadModal />
                             </Modal>

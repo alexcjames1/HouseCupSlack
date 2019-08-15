@@ -1,40 +1,26 @@
 @import "../../css/theme.scss";
 
 //Modal Navigation
-.modalNavigation {
-    text-align: right;
-    padding-right: 20px;
-    padding-top: 40px;
-}
-.close {
-    text-align: right;
-    color: $secondaryColor;
-    width: 100%;
-}
 
 //Modal Styles
-.download {
+.setup {
     padding-left: 40px;
     padding-right: 40px;
-    padding-bottom: 40px;
 }
 
 //Text Styles
 .heading {
-    font-size: $h4;
-    font-weight: $bold;
+    // font-size: $h4;
+    // font-weight: $normal;
     text-align: center;
 }
 .lead {
-    font-size: $secondaryParagraph;
-    color: $secondaryColor;
+    // font-size: $secondaryParagraph;
+    // color: $secondaryColor;
     max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-}
-.body p{
-    line-height: 1.3em;
 }
 @media (min-width: 575px) {
     .lead {
@@ -42,119 +28,14 @@
     }
 }
 
-//Scaffolding
-.card {
-    @include border;
-    height: 170px;
-    width: 170px;
-    margin: 30px 0;
+.contentHeader h5 {
+    font-size: $h5;
+    font-weight: $bold;
 }
-@media (min-width: 768px) {
-    .card {
-        margin: 3px;
-    }
-}
-@media (min-width: 1055px) {
-    .card {
-        height: 185px;
-        width: 185px;
-    }
-}
-@media (min-width: 1124px) {
-    .card {
-        height: 200px;
-        width: 200px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .card {
-        margin: 3px;
-        height: 215px;
-        width: 215px;
-    }
-}
-@media (min-width: 1353px) {
-    .card {
-        height: 250px;
-        width: 250px;
-    }
-}
-.card:hover {
-    @include borderHover;
-    box-shadow: $boxShadow;
-}
-.row {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100px;
-    justify-content: center;
-}
-@media (min-width: 837px) {
-    .row {
-        flex-basis: 500px;
-        flex-wrap: nowrap;
-    }
-}
-
-@media (min-width: 768px) {
-    .col {
-        display: flex;
-    }
-}
-.content {
-    padding: 0 20px;
-}
-
-//Base Icon Styles
-.icon {
-    @include icon;
-    margin-bottom: 0.9375em;
-}
-
-//Icon Colors
-.helpIcon {
-    background-color: $helpColor;
-}
-.getIcon {
-    background-color: $getColor;
-}
-.contributeIcon {
-    background-color: $contributeColor;
-}
-.shareIcon {
-    background-color: $shareColor;
-}
-
-//Base Button Styles
-.button  {
-    position: absolute;
-    bottom: 0;
-    padding-bottom: 335px;
-}
-@media (min-width: 1353px) {
-    .button  {
-        padding-bottom: 315px;
-    }
-}
-.button:hover {
-    text-decoration: $underlineHover;
-}
-
-//Button Colors
-.buttonHelp {
-    color: $helpColor;
-}
-.buttonGet {
-    color: $getColor;
-}
-.buttonContribute {
-    color: $contributeColor;
-}
-.buttonShare {
-    color: $shareColor;
+.body p{
+    line-height: 1.3em;
+    color: #424242;
+    font-size: 16px;
 }
 
 //Modal Footer
@@ -176,4 +57,95 @@
 }
 .modalFooter a {
     color: #347C9D;
+}
+
+//Scaffolding
+
+
+.row {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100px;
+    justify-content: center;
+}
+@media (min-width: 837px) {
+    .row {
+        flex-basis: 500px;
+        flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: 768px) {
+    .col {
+        display: flex;
+    }
+}
+.content {
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    margin: 3px;
+    border-radius:  6px;
+    border-color: #d9d7d7;
+    border-width: 1px;
+    width: 200px;
+    height: 200px;
+}
+.content:hover {
+    box-shadow: $boxShadow;
+    border-color: transparent;
+}
+.donate:hover {
+    text-decoration: underline;
+}
+//Base Icon Styles
+.icon {
+    @include icon;
+    margin-bottom: -27px;
+    position: relative;
+}
+.icon i {
+    color: #fff;
+}
+//Icon Colors
+.helpIcon {
+    background-color: $helpColor;
+}
+.getIcon {
+    background-color: $getColor;
+}
+.contributeIcon {
+    background-color: $contributeColor;
+}
+.shareIcon {
+    background-color: $shareColor;
+}
+
+//Base Button Styles
+
+// @media (min-width: 1353px) {
+//     .button  {
+//         padding-bottom: 315px;
+//     }
+// }
+// .button:hover {
+//     text-decoration: $underlineHover;
+// }
+
+//Button Colors
+.buttonHelp {
+    color: $helpColor;
+}
+.buttonGet {
+    color: $getColor;
+}
+.buttonContribute {
+    color: $contributeColor;
+}
+.buttonShare {
+    color: $shareColor;
 }
