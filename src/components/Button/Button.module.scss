@@ -1,60 +1,58 @@
-.button  {
-    color: #565656;
-    font-size: 0.75rem;
-    font-weight: 300;
-    line-height: 0.875em;
-    display: inline-block;
+@import '../../css/theme.scss';
 
-    &--primary {
-        color: var(--primaryColor);
-        text-transform: uppercase;
-        border: 1px solid;
+
+//Section Styles and Types
+.section  {
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    &--light {
+        background-color: #fff;
+        border-left: 1px #d9d9d9;
+        border-right: 1px #d9d9d9;
+        border-top: 1px #d9d9d9;
+        border-bottom: 3px #d9d9d9;
+        border-style: solid;
         border-radius: 4px;
-        padding: 0.625rem;
-    }
-    @media (min-width: 768px) {
-        &--primary:hover {
-            transform: scale(1.05);
-        }
-    }
-    &--link {
-        text-decoration: none;
-        line-height: 0.875em;
-        background: transparent;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    @media (min-width: 768px) {
-        &--link:hover {
-            text-decoration: underline;
-        }
-        &--link:visited {
-            color: #1c3359;
-        }
-    }
-    &--cta {
-        text-transform: uppercase;
+        font-family: lato;
+        font-size: 14px;
+        color: #424242;
         font-weight: 900;
-    }
-    @media (min-width: 768px) {
-        &--cta {
-            font-weight: 900;
-            line-height: 1.125rem;
-            text-transform: uppercase;
-            background: #fff;
+        :hover {
+            background-color: #fcfcfc;
+            border-left: 1px #d6d6d6;
+            border-right: 1px #d6d6d6;
+            border-top: 1px #d6d6d6;
+            border-bottom: 3px #d6d6d6;
+            border-style: solid;
             border-radius: 4px;
         }
     }
-    &--large {
-        padding: 1rem;
+
+    &--dark {
+        background-color: #337B9C;
+        border-left: 1px #225b75;
+        border-right: 1px #225b75;
+        border-top: 1px #225b75;
+        border-bottom: 3px #225b75;
+        border-style: solid;
+        border-radius: 4px;
+        color: #fff;
+        margin-right: 3px;
+        :hover {
+            background-color: #306f8c;
+            border-left: 1px #1b4d63;
+            border-right: 1px #1b4d63;
+            border-top: 1px #1b4d63;
+            border-bottom: 3px #1b4d63;
+            border-style: solid;
+            border-radius: 4px;
+        }
     }
-    &--xsmall {
-        padding: 20px 0;
+    &--normal {
+        padding: 13px 25px;
     }
-    &--small {
-        padding: 40px 0;
-    }
-    &--big {
-        padding: 80px 0;
+    &--thin {
+        padding: 10px 25px;
     }
 }

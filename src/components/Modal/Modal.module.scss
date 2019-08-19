@@ -17,6 +17,7 @@
         bottom: 0;
         right: 0;
     }
+
     &.isOpen {
         display: block;
 
@@ -30,8 +31,7 @@
     }
     .modalContent {
         background: #fff;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 10vh auto 0;
         padding: 10px;
         min-height: 100px;
         max-width: 1000px;
@@ -41,9 +41,9 @@
         box-shadow: $boxShadow;
         border-radius: 4px;
     }
-    @media (min-width:768px) {
+    @media (min-width: 768px) {
         .modalContent {
-            margin: 40px auto 0;
+            margin: 20vh auto 0;
         }
     }
 }

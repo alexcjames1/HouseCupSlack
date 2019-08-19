@@ -37,220 +37,65 @@
   }
 }
 
+// animation: float 15s linear infinite alternate;
 .HouseCupHero {
      background: url("./images/hero-bg.jpg");
      background-repeat: no-repeat;
      background-size: cover;
      overflow: hidden;
      position: relative;
-
-}
-
-//foreground and foreground elements
-.foreground {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
-    margin-right: -50px;
-    margin-bottom: -25px;
-}
-@media (min-width: 1340px) {
-    .foreground {
-
-    }
-}
-.mainDarkHill {
-    margin-right: -35px;
-}
-.tree {
-
-    visibility: hidden;
-}
-@media (min-width: 1475px) {
-    .tree {
-
-        visibility: visible;
-    }
-}
-
-//middleground and middleground elements
-.backTreeline {
-    position: absolute;
-    bottom: 0;
-    z-index: 97;
-    margin-bottom: -200px;
-    margin-left: -7px;
-    height: 40%;
-}
-@media (min-width: 992px) {
-    .backTreeline {
-        height: auto;
-    }
-}
-.frontTreeline {
-    position: absolute;
-    bottom: 0;
-    z-index: 98;
-    margin-bottom: -175px;
-    margin-left: -7px;
-    height: 33%;
-}
-@media (min-width: 992px) {
-    .frontTreeline {
-        height: auto;
-    }
-}
-
-//background and background elements
-.background {
-    position: absolute;
-    bottom: 0;
-    z-index: 80;
-    right: 0;
-}
-.lake {
-    margin-right: 60px;
-    margin-bottom: 30px;
-    display: none;
-}
-@media (min-width: 1475px) {
-    .lake {
-        margin-right: 100px;
-        margin-left: -20px;
-        margin-bottom: 30px;
-        display: inline;
-    }
-}
-.castle {
-    margin-bottom: 65px;
-    width: 100%;
-    margin-right: -210px;
-}
-@media (min-width: 678px) {
-    .castle {
-        margin-bottom: 90px;
-        // width: 35%;
-        margin-right: -270px
-    }
-}
-@media (min-width: 820px) {
-    .castle {
-        margin-bottom: 100px;
-        // width: 45%;
-        margin-right: -185px
-    }
-}
-@media (min-width: 920px) {
-    .castle {
-        margin-bottom: 130px;
-        // width: 45%;
-        margin-right: -185px
-    }
-}
-@media (min-width: 975px) {
-    .castle {
-        margin-bottom: 150px;
-        // width: 45%;
-        margin-right: -185px
-    }
-}
-@media (min-width: 1020px) {
-    .castle {
-        margin-bottom: 170px;
-        // width: 45%;
-        margin-right: -185px
-    }
-}
-@media (min-width: 1090px) {
-    .castle {
-        margin-bottom: 200px;
-        // width: 45%;
-        margin-right: -185px
-    }
-}
-@media (min-width: 1140px) {
-    .castle {
-        margin-bottom: 220px;
-        // width: 45%;
-        margin-right: -185px
-    }
-}
-@media (min-width: 1215px) {
-    .castle {
-        margin-bottom: 250px;
-        // width: 45%;
-        margin-right: -185px
-    }
-}
-@media (min-width: 1335px) {
-    .castle {
-        margin-bottom: 270px;
-        margin-left: 120px;
-        margin-right: -165px
-    }
-}
-
-
-//clouds
-.clouds {
-    position: relative;
-    z-index: 102;
-    bottom: 0;
-}
-.cloudOne {
-    position: absolute;
-    right: 0;
-    margin-right: 40px;
-    margin-top: -565px;
-    animation: float 15s linear infinite alternate;
-}
-.cloudTwo {
-    position: absolute;
-    left: 0;
-    margin-left: 27%;
-    margin-top: -240px;
-    animation: float 15s linear infinite alternate;
-}
-.cloudThree {
-    margin-top: -650px;
-    position: absolute;
-    margin-left: 20px;
-    animation: float 15s linear infinite alternate;
-
 }
 
 //Hero CTA content
 .row {
     position: relative;
     margin-top: 150px;
+    z-index: 10;
 }
 @media (min-width: 992px) {
     .row {
         margin-top: 250px;
-        margin-bottom: 190px;
+        margin-bottom: 100px;
     }
 }
 .crest {
     visibility: hidden;
-    width: 50%;
+    width: 10%;
+}
+@media (min-width: 768px) {
+    .crest {
+        visibility: hidden;
+        width: 70%;
+    }
 }
 @media (min-width: 1770px) {
     .crest {
         visibility: visible;
+        width: 70%;
     }
 }
 .header {
-    font-size: $heroBigFont;
+    font-size: $heroBigFontMobile;
     font-weight: $black;
     color: $baseFontColor;
 }
+@media (min-width: 768px){
+    .header {
+        font-size: $heroBigFont;
+    }
+}
 .body {
-    font-size: 18px;
+    font-size: $h5mobile;
     color: #424242;
     padding-bottom: 15px;
     max-width: 80%;
 }
+@media (min-width: 768px){
+    .body {
+        font-size: $h5;
+    }
+}
+
 .slackButton {
     @include slackButtonHero;
 }
@@ -261,4 +106,106 @@
     width: 18px;
     margin-right: 7px;
     margin-bottom: -3px;
+}
+
+
+.foreground {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.tree {
+    visibility: hidden;
+}
+@media (min-width: 1470px) {
+    .tree {
+        margin-bottom: -20px;
+        visibility: visible;
+    }
+}
+.mainDarkHill {
+    position: relative;
+    bottom: 0;
+    margin-bottom: -10px;
+    margin-right: -50px;
+}
+@media (min-width: 768px) {
+    .mainDarkHill {
+        position: relative;
+        bottom: 0;
+        margin-bottom: -30px;
+        margin-right: -50px;
+    }
+}
+.castle {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin-bottom: 34px;
+    margin-right: -20px;
+}
+@media (min-width: 768px) {
+    .castle {
+        width: 35%;
+        margin-bottom: 125px;
+        margin-right: -20px;
+    }
+}
+@media (min-width: 1000px) {
+    .castle {
+        width: 35%;
+        margin-bottom: 143px;
+        margin-right: -20px;
+    }
+}
+@media (min-width: 1200px) {
+    .castle {
+        width: 35%;
+        margin-bottom: 160px;
+        margin-right: -20px;
+    }
+}
+@media (min-width: 1300px) {
+    .castle {
+        width: 35%;
+        margin-bottom: 175px;
+        margin-right: -20px;
+    }
+}
+@media (min-width: 1450px) {
+    .castle {
+        width: 35%;
+        margin-bottom: 190px;
+        margin-right: -20px;
+    }
+}
+
+.middleground {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -150px;
+}
+.frontTreeline {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px;
+}
+.backTreeline {
+    margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+    .backTreeline {
+        margin-bottom: -50px;
+    }
+}
+
+
+.background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.lake {
+    width: 10%;
 }
