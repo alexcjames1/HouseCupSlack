@@ -37,7 +37,7 @@ export default class Modal extends Component {
                     </div>
 
                 </div>
-                <div onClick={this.openModalHandler}>{this.props.trigger}</div>
+                <span onClick={this.openModalHandler}>{this.props.trigger}</span>
             </Fragment>
         );
     }

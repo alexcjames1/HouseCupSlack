@@ -9,7 +9,7 @@ export default class downloadModal extends React.Component {
 
   render () {
     return (
-        <Section className={style.section} kind="primary" size="small">
+        <Section className={style.section} kind="primary" size="xsmall">
 
                 <div className={style.setup}>
                     <div className={style.header}>

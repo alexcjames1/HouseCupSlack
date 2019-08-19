@@ -17,7 +17,6 @@
 .lead {
     // font-size: $secondaryParagraph;
     // color: $secondaryColor;
-    max-width: 85%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -60,14 +59,13 @@
 }
 
 //Scaffolding
-
-
+.card {
+    margin: 3px;
+}
 .row {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     display: flex;
-    flex-wrap: wrap;
-    flex-basis: 100px;
     justify-content: center;
 }
 @media (min-width: 837px) {
@@ -82,22 +80,30 @@
         display: flex;
     }
 }
-.content {
+.card {
     padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 20px;
     border-style: solid;
-    margin: 3px;
     border-radius:  6px;
     border-color: #d9d7d7;
     border-width: 1px;
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
 }
-.content:hover {
+@media (min-width: 768px) {
+    .card {
+        width: 215px;
+        height: 215px;
+    }
+}
+.card:hover {
     box-shadow: $boxShadow;
     border-color: transparent;
+}
+.content {
+    text-align: left;
 }
 .donate:hover {
     text-decoration: underline;
@@ -105,8 +111,8 @@
 //Base Icon Styles
 .icon {
     @include icon;
-    margin-bottom: -27px;
-    position: relative;
+    margin-top: -65px;
+    margin-bottom: 20px;
 }
 .icon i {
     color: #fff;

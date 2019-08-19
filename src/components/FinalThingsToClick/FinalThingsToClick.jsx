@@ -5,10 +5,12 @@ import botLogo from './images/bot-logo.png';
 import slackLogoWhite from './images/slack-icon-white.png';
 import { Modal } from '../../components';
 import { DownloadModal } from  '../../components';
+import { Section } from '../../components';
 
 export default class Footer__SlackCTA extends Component {
     render() {
         return(
+            <Section className={style.section} kind="primary" size="xsmall">
             <div className={style.footer__SlackCTA}>
 
                 <div className={style.media}>
@@ -28,10 +30,10 @@ export default class Footer__SlackCTA extends Component {
                         </p>
                     </div>
                     <div className={style.footer}>
-                        <Modal trigger={
-                            <a className={classy(style.button, style.slackButton)}>
+                        <Modal  classname={style.modal} trigger={
+                            <span className={classy(style.button, style.slackButton)}>
                                 <img src={slackLogoWhite} className={style.slackLogo}/> Add to slack
-                            </a>
+                            </span>
                         }>
                             <DownloadModal />
                         </Modal>
@@ -45,6 +47,7 @@ export default class Footer__SlackCTA extends Component {
                 </div>
 
             </div>
+        </Section>
         );
     }
 }

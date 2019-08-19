@@ -1,25 +1,35 @@
 @import "../../css/theme.scss";
 
-//Div Container Styles
-.footer__SlackCTA  {
+//div Container Styles
+.section  {
     display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
     background-image: url("./images/footer-bg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-position: left 90px bottom 20px top 30px;
+    padding-top: 40px;
     height: 550px;
-    padding-top: 80px;
-
+}
+@media (min-width: 768px) {
+    .section {
+        background-position: right 00px bottom 20px top 30px;
+        height: 550px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 80px;
+    }
+}
+.footer__SlackCTA {
+    display: flex;
+    flex-wrap: wrap;
 }
 @media (min-width: 768px) {
     .footer__SlackCTA {
-        background-position: right 00px bottom 20px top 30px;
-        height: 550px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
@@ -27,14 +37,20 @@
 .mediaFigure {
     width: 150px;
     height: 150px;
+    margin-left: -11px;
+    margin-bottom: -10px;
 }
 @media (min-width: 992px) {
     .mediaFigure {
         width: 250px;
         height: 250px;
+        margin-left: 0px;
+        margin-bottom: 0px;
     }
 }
-
+.modal {
+    display: inline-block;
+}
 //Text Styles
 .title {
     font-size: $h2mobile;
@@ -56,15 +72,16 @@
     color: $secondaryColor;
     font-size: $secondaryParagraph;
     max-width: 550px;
+
 }
 .subTitle {
     color: rgba(43,41,45,0.6);
-    font-size: $specialSizeMobile;
+    font-size: $subtitleMobile;
     padding-top: 15px;
 }
 @media (min-width: 575px) {
     .subTitle {
-        font-size: $specialSize;
+        font-size: $subtitle;
         padding-top: 10px;
     }
 }
@@ -124,7 +141,6 @@
     border-style: solid;
     border-radius: 4px;
 }
-
 
 //Footer Styles
 .footer  {
