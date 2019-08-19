@@ -69,32 +69,32 @@ export default class HouseCupHero extends Component {
 
                         <img src={crest} className={style.crest}/>
                         <div className={style.greenGroup}>
-                            <img src={boyGreen} className={style.boyGreen}/>
-                            <img src={girlGreen} className={style.girlGreen}/>
-                            <img src={arrow} className={style.arrow}/>
-                            <img src={twentyFive} className={style.twentyFive}/>
+                            <img src={boyGreen} className={classy(style.userMed, style.boyGreen)}/>
+                            <img src={girlGreen} className={classy(style.userLg, style.girlGreen)}/>
+                            <img src={arrow} className={classy(style.accent, style.arrow)}/>
+                            <img src={twentyFive} className={classy(style.points, style.twentyFive)}/>
                         </div>
                         <div className={style.blueGroup}>
-                            <img src={boyBlue} className={style.boyBlue}/>
-                            <img src={girlBlue} className={style.girlBlue}/>
+                            <img src={boyBlue} className={classy(style.userSm, style.boyBlue)}/>
+                            <img src={girlBlue} className={classy(style.userLg, style.girlBlue)}/>
                             <img src={swirlArrow} className={style.swirlArrow}/>
-                            <img src={emphasisLeft} className={style.emphasisLeft}/>
-                            <img src={emphasisRight} className={style.emphasisRight}/>
-                            <img src={fifty} className={style.fifty}/>
+                            <img src={emphasisLeft} className={classy(style.accent, style.emphasisLeft)}/>
+                            <img src={emphasisRight} className={classy(style.accent, style.emphasisRight)}/>
+                            <img src={fifty} className={classy(style.points, style.fifty)}/>
                         </div>
                         <div className={style.yellowGroup}>
-                            <img src={boyYellow2} className={style.boyYellow}/>
-                            <img src={boyYellow1} className={style.boyYellow}/>
-                            <img src={girlYellow} className={style.girlYellow}/>
-                            <img src={zigzag} className={style.zigzag}/>
-                            <img src={tenYellow} className={style.ten}/>
+                            <img src={boyYellow2} className={classy(style.userMed, style.boyYellow2)}/>
+                            <img src={boyYellow1} className={classy(style.userSm, style.boyYellow1)}/>
+                            <img src={girlYellow} className={classy(style.userLg, style.girlYellow)}/>
+                            <img src={zigzag} className={classy(style.accent, style.zigzag)}/>
+                            <img src={tenYellow} className={classy(style.points, style.tenYellow)}/>
                         </div>
                         <div className={style.redGroup}>
-                            <img src={boyRed} className={style.boyRed}/>
-                            <img src={girlRed1} className={style.girlRed1}/>
-                            <img src={girlRed2} className={style.girlRed2}/>
-                            <img src={swirl} className={style.swirl}/>
-                            <img src={tenRed} className={style.ten}/>
+                            <img src={boyRed} className={classy(style.userLg, style.boyRed)}/>
+                            <img src={girlRed2} className={classy(style.userMed, style.girlRed2)}/>
+                            <img src={girlRed1} className={classy(style.userSm, style.girlRed1)}/>
+                            <img src={swirl} className={classy(style.accent, style.swirl)}/>
+                            <img src={tenRed} className={classy(style.points, style.tenRed)}/>
                         </div>
 
                     </Col>
