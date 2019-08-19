@@ -48,11 +48,11 @@
 //Media Body
 .mediaBody {
     color: $baseFontColor;
-    font-size: $secondaryParagraphMobile;
+    font-size: $bodyMobile;
 }
 @media (min-width: 768px) {
     .mediaBody {
-        font-size: $secondaryParagraph;
+        font-size: $body;
     }
 }
 

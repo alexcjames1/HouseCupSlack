@@ -42,10 +42,10 @@
 }
 .content {
     color: #424242;
-    font-size: $secondaryParagraphMobile;
+    font-size: $bodyMobile;
 }
 @media (min-width: 575px) {
     .content {
-        font-size: $secondaryParagraph;
+        font-size: $body;
     }
 }
