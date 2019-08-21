@@ -11,25 +11,3 @@
     margin-right: 7px;
     margin-bottom: -3px;
 }
-
-
-
-
-// <div className={style.download_button}>
-//             <Route
-//                 path="/download"
-//                 ender={() => (
-//                 <Modal
-//                     visible
-//                     onClose={() => {
-//                         this.props.history.push('/');
-//                 }}>
-//                     <div className={style.downloadWrapper}>
-//                     </div>
-//                 </Modal>
-//                         )}
-//             />
-//             <a href="/download" kind="primary" icon="plus">
-//                     Connect
-//             </a>
-// </div>

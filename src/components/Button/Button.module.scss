@@ -1,32 +1,34 @@
 @import '../../css/theme.scss';
 
 
-//Section Styles and Types
-.section  {
+/////////SECTION STYLES AND TYPES/////////
+.button  {
     padding-top: 0px;
     padding-bottom: 0px;
+    padding: 10px 25px;
+    font-family: lato;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #fff;
+    border-left: 1px #d9d9d9;
+    border-right: 1px #d9d9d9;
+    border-top: 1px #d9d9d9;
+    border-bottom: 3px #d9d9d9;
+    border-style: solid;
+    border-radius: 4px;
+    color: #424242;
 
-    &--light {
-        background-color: #fff;
-        border-left: 1px #d9d9d9;
-        border-right: 1px #d9d9d9;
-        border-top: 1px #d9d9d9;
-        border-bottom: 3px #d9d9d9;
+    .icon {padding-right: 6px;}
+
+    &:hover {
+        background-color: #fcfcfc;
+        border-left: 1px #d6d6d6;
+        border-right: 1px #d6d6d6;
+        border-top: 1px #d6d6d6;
+        border-bottom: 3px #d6d6d6;
         border-style: solid;
         border-radius: 4px;
-        font-family: lato;
-        font-size: 14px;
-        color: #424242;
-        font-weight: 900;
-        :hover {
-            background-color: #fcfcfc;
-            border-left: 1px #d6d6d6;
-            border-right: 1px #d6d6d6;
-            border-top: 1px #d6d6d6;
-            border-bottom: 3px #d6d6d6;
-            border-style: solid;
-            border-radius: 4px;
-        }
+        cursor: pointer;
     }
 
     &--dark {
@@ -39,7 +41,8 @@
         border-radius: 4px;
         color: #fff;
         margin-right: 3px;
-        :hover {
+
+        &:hover {
             background-color: #306f8c;
             border-left: 1px #1b4d63;
             border-right: 1px #1b4d63;

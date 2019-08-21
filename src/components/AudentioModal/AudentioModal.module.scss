@@ -1,6 +1,6 @@
 @import "../../css/theme.scss";
 
-//Modal Navigation
+/////////MODAL NAVIGATION/////////
 .modalNavigation {
     padding-top: 50px;
     padding-left: 60px;
@@ -18,7 +18,7 @@
     color: $darkButton;
 }
 
-//Scaffolding
+/////////SCAFFOLDING/////////
 @media (min-width: 575px) {
     .section {
         margin-left: 10%;
@@ -51,7 +51,7 @@
     }
 }
 
-//Text Styles
+/////////HEADING STYLES/////////
 .heading {
     font-size: $h3;
     text-transform: uppercase;
@@ -67,6 +67,8 @@
 .subheading h4 {
     font-weight: $bold;
 }
+
+/////////BODY STYLES/////////
 .content {
     margin-bottom: 40px;
 }
@@ -76,7 +78,20 @@
     }
 }
 
-//Button Styles
+/////////FOOTER STYLES/////////
+.modalFooter {
+    text-align: center;
+}
+.modalFooter h5 {
+    font-weight: $bold;
+}
+.modalFooter p {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/////////BUTTON STYLES/////////
 .learnMoreButton {
     background-color: $darkButton;
     color: #fff;
@@ -86,7 +101,7 @@
     box-shadow: $shadowHover;
 }
 
-//Card Styles
+/////////CARD STYLES/////////
 .card {
     @include border;
     width: 200px;
@@ -104,7 +119,7 @@
     padding: 20px;
 }
 
-//Icon Styles
+/////////ICON STYLES/////////
 .icon {
     @include icon;
 }
@@ -112,7 +127,7 @@
     background-color: $helpColor;
 }
 
-//Button Styles
+/////////BUTTON STYLES/////////
 .buttonHelp {
     color: $helpColor;
     position: absolute;
@@ -122,17 +137,4 @@
 }
 .buttonHelp:hover {
     text-decoration: $underlineHover;
-}
-
-//Footer Styles
-.modalFooter {
-    text-align: center;
-}
-.modalFooter h5 {
-    font-weight: $bold;
-}
-.modalFooter p {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
 }

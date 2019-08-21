@@ -50,6 +50,7 @@
 .row {
     position: relative;
     margin-top: 150px;
+    margin-bottom: 20px;
     z-index: 10;
 }
 @media (min-width: 992px) {
@@ -91,120 +92,6 @@
     margin-right: 7px;
     margin-bottom: -3px;
 }
-
-//crest styles
-.crest {
-    visibility: hidden;
-    width: 10%;
-}
-@media (min-width: 768px) {
-    .crest {
-        visibility: hidden;
-        width: 70%;
-    }
-}
-@media (min-width: 1770px) {
-    .crest {
-        visibility: visible;
-        width: 70%;
-    }
-}
-
-.userSm {
-    width: 60px;
-}
-.userMed {
-    width: 80px;
-}
-.userLg {
-    width: 100px;
-}
-.accent {
-    width: 80px;
-}
-
-.greenGroup {
-    position:absolute;
-    bottom: 0;
-}
-.boyGreen {
-    margin-bottom: 320px;
-    margin-left: 300px;
-    position:absolute;
-    bottom: 0;
-}
-.girlGreen {
-    position:absolute;
-    bottom: 0;
-    margin-bottom: 235px;
-    margin-left: 210px;
-}
-.arrow {
-
-}
-.twentyFive {
-
-}
-
-.redGroup {
-    position:absolute;
-    bottom: 0;
-}
-.girlRed1 {
-    margin-bottom: 235px;
-    margin-left: -160px;
-}
-.girlRed2 {
-    margin-bottom: 290px;
-    margin-left: 5px;
-}
-.boyRed {
-    margin-bottom: 340px;
-    margin-left: 0px;
-}
-
-.blueGroup {
-    position:absolute;
-    bottom: 0;
-}
-.boyBlue {
-    position:absolute;
-    bottom: 0;
-    margin-bottom: 60px;
-    margin-left: 210px;
-}
-.girlBlue {
-    position:absolute;
-    bottom: 0;
-    margin-bottom: 85px;
-    margin-left: 290px;
-}
-
-.yellowGroup {
-    position:absolute;
-    bottom: 0;
-}
-.girlYellow {
-    position:absolute;
-    bottom: 0;
-}
-.boyYellow1 {
-    position:absolute;
-    bottom: 0;
-    margin-left: 40px;
-    margin-bottom: 110px;
-}
-.boyYellow2 {
-    margin-left: 5px;
-    margin-bottom: 110px;
-}
-
-
-
-
-
-
-
 
 .foreground {
     position: absolute;
@@ -286,14 +173,19 @@
 .frontTreeline {
     position: absolute;
     bottom: 0;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+}
+@media (min-width: 768px) {
+    .frontTreeline {
+        margin-bottom: 0px;
+    }
 }
 .backTreeline {
     margin-bottom: 50px;
 }
 @media (min-width: 768px) {
     .backTreeline {
-        margin-bottom: -50px;
+        margin-bottom: -62px;
     }
 }
 
@@ -304,5 +196,176 @@
     right: 0;
 }
 .lake {
+    display: none;
+    width: 400px;
+    margin-right: 570px;
+    margin-bottom: 10px;
+}
+@media (min-width: 1500px) {
+    .lake {
+        display: block;
+        margin-right: 570px;
+        margin-bottom: 10px;
+    }
+}
+
+//crest styles
+.crestMedia {
     width: 10%;
+}
+@media (min-width: 1770px) {
+    .crestMedia {
+        width: 70%;
+    }
+}
+
+
+.crest {
+    display: none;
+}
+@media (min-width: 1770px) {
+    .crest {
+        display: block;
+    }
+}
+
+//crest element general styles
+.userSm {
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+.userMed {
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+}
+.userLg {
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+}
+.points {
+    width: 70px;
+}
+
+//green group
+.boyGreen {
+    margin-bottom: 330px;
+    margin-left: -75px;
+}
+.girlGreen {
+    margin-bottom: 240px;
+    margin-left: -160px;
+}
+.arrow {
+    margin-bottom: 335px;
+    margin-left: -130px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+}
+.twentyFive {
+    margin-bottom: 400px;
+    margin-left: -45px;
+}
+
+//blue group
+.boyBlue {
+    position: relative;
+    z-index: 100;
+    margin-bottom: 50px;
+    margin-left: -195px;
+}
+.girlBlue {
+    margin-bottom: 94px;
+    margin-left: 20px;
+}
+.swirlArrow {
+    margin-bottom: -15px;
+    margin-left: -50px;
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+}
+.emphasisLeft {
+    margin-bottom: 75px;
+    margin-left: -30px;
+    width: 65px;
+    position: absolute;
+    bottom: 0;
+}
+.emphasisRight {
+    margin-bottom: 75px;
+    margin-left: 90px;
+    width: 65px;
+    position: absolute;
+    bottom: 0;
+}
+.fifty {
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+.crownLg {
+    width: 70px;
+    margin-bottom: 170px;
+    margin-left: -57px;
+}
+.crownSm {
+    width: 50px;
+    margin-bottom: 113px;
+    margin-left: -160px;
+}
+
+//yellow group
+.boyYellow2 {
+    margin-bottom: 130px;
+    margin-left: -240px;
+}
+.boyYellow1 {
+    margin-bottom: 115px;
+    margin-left: -150px;
+}
+.girlYellow {
+    margin-bottom: 10px;
+    margin-left: -190px;
+}
+.zigzag {
+    margin-bottom: 40px;
+    margin-left: -280px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+}
+.tenYellow {
+    margin-bottom: 5px;
+    margin-left: -260px;
+    width: 60px;
+}
+
+//red group
+.boyRed {
+    margin-bottom: 355px;
+    margin-left: -65px;
+}
+.girlRed2 {
+    margin-bottom: 290px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 100;
+}
+.girlRed1 {
+    margin-bottom: 235px;
+    margin-left: -150px;
+}
+.swirl {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 325px;
+    margin-left: -115px;
+}
+.tenRed {
+    margin-bottom: 295px;
+    margin-left: -141px;
 }

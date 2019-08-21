@@ -1,6 +1,6 @@
 @import "../../css/theme.scss";
 
-//div Container Styles
+/////////SECTION/CONTAINER STYLES/////////
 .section  {
     display: flex;
     background-image: url("./images/footer-bg.jpg");
@@ -33,7 +33,7 @@
     }
 }
 
-//Media Figure Styles
+/////////MEDIA FIGURE/////////
 .mediaFigure {
     width: 150px;
     height: 150px;
@@ -51,14 +51,11 @@
 .modal {
     display: inline-block;
 }
-//Text Styles
+/////////HEADING STYLES/////////
 .title {
     font-size: $h2mobile;
     color: $baseFontColor;
     margin: 0.5em 0;
-}
-.body {
-    max-width: 70%;
 }
 @media (min-width: 768px) {
     .title {
@@ -68,12 +65,19 @@
         max-width: 85%;
     }
 }
+
+/////////BODY STYLES/////////
 .content {
     color: $secondaryColor;
     font-size: $body;
     max-width: 550px;
 
 }
+.body {
+    max-width: 70%;
+}
+
+/////////FOOTER STYLES/////////
 .subTitle {
     color: rgba(43,41,45,0.6);
     font-size: $subtitleMobile;
@@ -86,7 +90,7 @@
     }
 }
 
-//Button Styles
+/////////BUTTON STYLES/////////
 .button {
     padding: 10px 25px;
     font-family: lato;
@@ -142,7 +146,7 @@
     border-radius: 4px;
 }
 
-//Footer Styles
+/////////FOOTER STYLES/////////
 .footer  {
     padding-top: 20px;
 }

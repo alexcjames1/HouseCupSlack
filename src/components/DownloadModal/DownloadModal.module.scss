@@ -1,22 +1,22 @@
 @import "../../css/theme.scss";
 
-//Modal Navigation
-
-//Modal Styles
+/////////MODAL STYLES/////////
 .setup {
     padding-left: 40px;
     padding-right: 40px;
 }
 
-//Text Styles
+.helpButton {color: RED;}
+
+.button {
+    margin-top: auto;
+}
+
+/////////TEXT HEADER/////////
 .heading {
-    // font-size: $h4;
-    // font-weight: $normal;
     text-align: center;
 }
 .lead {
-    // font-size: $secondaryParagraph;
-    // color: $secondaryColor;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -27,17 +27,8 @@
     }
 }
 
-.contentHeader h5 {
-    font-size: $h5;
-    font-weight: $bold;
-}
-.body p{
-    line-height: 1.3em;
-    color: #424242;
-    font-size: 16px;
-}
 
-//Modal Footer
+/////////TEXT FOOTER/////////
 .modalFooter {
     text-align: center;
 }
@@ -58,14 +49,18 @@
     color: #347C9D;
 }
 
-//Scaffolding
-.card {
-    margin: 3px;
+/////////SCAFFOLDING/////////
+.card, .mediaContent, .media {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 0;
 }
 .row {
     margin-top: 35px;
     margin-bottom: 35px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 @media (min-width: 837px) {
@@ -75,40 +70,15 @@
     }
 }
 
+.col {min-width: 0;}
+
 @media (min-width: 768px) {
     .col {
         display: flex;
     }
 }
-.card {
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    border-style: solid;
-    border-radius:  6px;
-    border-color: #d9d7d7;
-    border-width: 1px;
-    width: 180px;
-    height: 180px;
-}
-@media (min-width: 768px) {
-    .card {
-        width: 215px;
-        height: 215px;
-    }
-}
-.card:hover {
-    box-shadow: $boxShadow;
-    border-color: transparent;
-}
-.content {
-    text-align: left;
-}
-.donate:hover {
-    text-decoration: underline;
-}
-//Base Icon Styles
+
+/////////BASE ICON STYLES/////////
 .icon {
     @include icon;
     margin-top: -65px;
@@ -117,7 +87,8 @@
 .icon i {
     color: #fff;
 }
-//Icon Colors
+
+/////////ICON COLORS/////////
 .helpIcon {
     background-color: $helpColor;
 }
@@ -131,7 +102,10 @@
     background-color: $shareColor;
 }
 
-//Button Colors
+/////////BUTTON STYLES/////////
+.buttonResponsive:hover {
+    text-decoration: underline;
+}
 .buttonHelp {
     color: $helpColor;
 }
@@ -144,3 +118,98 @@
 .buttonShare {
     color: $shareColor;
 }
+
+
+
+
+
+
+
+
+
+.test {
+    position: absolute;
+    bottom: 0;
+}
+// <div className={style.card}>
+//     <div className={classy(style.icon, style.helpIcon)}><i className="mdi mdi-comment-question-outline" /></div>
+//     <div className={style.content}>
+//         <div className={style.contentHeader}>
+//             <h5>
+//                 I need help
+//             </h5>
+//         </div>
+//         <div className={style.body}>
+//             <p>Need this installed for you? We do not offer a SaaS yet.</p>
+//         </div>
+//         <div className={style.footer}>
+//              <a href="#" className={classy(style.button, style.buttonHelp)}>
+//                  <span className={style.buttonResponsive}>Get help</span> <i className="mdi mdi-arrow-right" />
+//              </a>
+//          </div>
+//      </div>
+// </div>
+//
+// <div className={style.card}>
+//     <div className={classy(style.icon, style.getIcon)}><i className="mdi mdi-download" /></div>
+//     <div className={style.content}>
+//         <div className={style.contentHeader}>
+//             <h5>
+//                 I can do it myself
+//             </h5>
+//         </div>
+//         <div className={style.body}>
+//             <p>Here are some instructions for getting this done on your own.</p>
+//         </div>
+//         <div className={style.footer}>
+//              <a href="#" className={classy(style.button, style.buttonGet)}>
+//                  <span className={style.buttonResponsive}>Read instructions</span> <i className="mdi mdi-arrow-right" />
+//              </a>
+//         </div>
+//     </div>
+// </div>
+
+
+
+
+
+
+
+//
+// <div className={style.card}>
+//     <div className={classy(style.icon, style.contributeIcon)}><i className="mdi mdi-square-edit-outline" /></div>
+//     <div className={style.content}>
+//         <div className={style.contentHeader}>
+//             <h5>
+//                 Contribute
+//             </h5>
+//         </div>
+//         <div className={style.body}>
+//             <p>Please also consider contributing to this open source project.</p>
+//         </div>
+//         <div className={style.footer}>
+//              <a href="#" className={classy(style.button, style.buttonContribute)}>
+//                  <span className={style.buttonResponsive}>Contribute</span> <i className="mdi mdi-arrow-right" />
+//              </a>
+//         </div>
+//     </div>
+// </div>
+// <div className={style.card}>
+//     <div className={classy(style.icon, style.shareIcon)}><i className="mdi mdi-share-variant" /></div>
+//     <div className={style.content}>
+//         <div className={style.contentHeader}>
+//             <h5>
+//                 Share
+//             </h5>
+//         </div>
+//         <div className={style.body}>
+//             <p>Want to say thanks or share with your friends?</p>
+//         </div>
+//         <div className={style.footer}>
+//              <a href="#" className={classy(style.button, style.buttonShare)}>
+//                  <span className={style.buttonResponsive}>Share</span> <i className="mdi mdi-arrow-right" />
+//              </a>
+//         </div>
+//     </div>
+// </div>
+// </div>

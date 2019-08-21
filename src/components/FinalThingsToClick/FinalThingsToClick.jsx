@@ -6,6 +6,7 @@ import slackLogoWhite from './images/slack-icon-white.png';
 import { Modal } from '../../components';
 import { DownloadModal } from  '../../components';
 import { Section } from '../../components';
+import { Button } from '../../components';
 
 export default class Footer__SlackCTA extends Component {
     render() {
@@ -31,15 +32,13 @@ export default class Footer__SlackCTA extends Component {
                     </div>
                     <div className={style.footer}>
                         <Modal  classname={style.modal} trigger={
-                            <span className={classy(style.button, style.slackButton)}>
-                                <img src={slackLogoWhite} className={style.slackLogo}/> Add to slack
-                            </span>
+                            <Button kind="dark" icon="slack">Add to slack</Button>
                         }>
                             <DownloadModal />
                         </Modal>
-                        <a href="https://github.com/" target="_blank" className={classy(style.button, style.githubButton)}>
+                        <Button href="https://github.com/" target="_blank">
                             Contribute to GitHub
-                        </a>
+                        </Button>
                         <p className={style.subTitle}>
                             Free to use · Easy setup · Open source
                         </p>
