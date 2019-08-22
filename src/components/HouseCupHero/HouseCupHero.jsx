@@ -5,8 +5,7 @@ import slackLogo from './images/slack-logo-icon.png';
 import {Col, Row, Container } from 'react-bootstrap';
 import { Section } from '../../components';
 import {Link} from 'react-router-dom';
-import { Modal } from '../../components';
-import { DownloadModal } from '../../components';
+import { Modal, DownloadModal, Button } from '../../components';
 import lake from './images/black-lake.svg';
 import frontTreeline from './images/front-treeline.png';
 import backTreeline from './images/back-treeline.png';
@@ -47,6 +46,25 @@ export default class HouseCupHero extends Component {
     render() {
         return(
             <div className={style.HouseCupHero}>
+                <Row className={style.scenery}>
+                    <div className={style.background}>
+                        <img src={lake} className={style.lake}/>
+                    </div>
+                    <div className={style.middleground}>
+                        <img src={frontTreeline} className={style.frontTreeline}/>
+                        <img src={backTreeline} className={style.backTreeline}/>
+                    </div>
+                    <div className={style.foreground}>
+                            <img src={tree} className={style.tree}/>
+                            <img src={castle} className={style.castle}/>
+                            <img src={mainDarkHill} className={style.mainDarkHill}/>
+                    </div>
+                    <div className={style.clouds}>
+                        <img src={cloudRight} className={style.cloudOne}/>
+                        <img src={cloudLeft} className={style.cloudTwo}/>
+                        <img src={cloudRight} className={style.cloudThree}/>
+                    </div>
+                </Row>
                 <Container>
                 <Row className={style.row}>
                     <Col xs="12" sm="6" className={style.content}>
@@ -58,9 +76,9 @@ export default class HouseCupHero extends Component {
                         </div>
                         <div className={style.footer}>
                             <Modal trigger={
-                                <a className={style.slackButton}>
+                                <Button>
                                     <img src={slackLogo} className={style.slackLogo}/>Add to Slack
-                                </a>}
+                                </Button>}
                             >
                                 <DownloadModal />
                             </Modal>
@@ -99,25 +117,6 @@ export default class HouseCupHero extends Component {
                     </Col>
                 </Row>
                 </Container>
-                <Row className={style.scenery}>
-                    <div className={style.clouds}>
-                        <img src={cloudRight} className={style.cloudOne}/>
-                        <img src={cloudLeft} className={style.cloudTwo}/>
-                        <img src={cloudRight} className={style.cloudThree}/>
-                    </div>
-                    <div className={style.background}>
-                        <img src={lake} className={style.lake}/>
-                    </div>
-                    <div className={style.middleground}>
-                        <img src={frontTreeline} className={style.frontTreeline}/>
-                        <img src={backTreeline} className={style.backTreeline}/>
-                    </div>
-                    <div className={style.foreground}>
-                            <img src={tree} className={style.tree}/>
-                            <img src={castle} className={style.castle}/>
-                            <img src={mainDarkHill} className={style.mainDarkHill}/>
-                    </div>
-                </Row>
                 </div>
         );
     }

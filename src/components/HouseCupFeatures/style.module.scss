@@ -1,6 +1,6 @@
 @import "../../css/theme.scss";
 
-//Text Styles
+/////////TITLE STYLES/////////
 .title {
     color: $tertiaryColor;
     margin-bottom: 15px;
@@ -16,14 +16,16 @@
         width: 15%;
     }
 }
-.boldText {
+
+/////////BODY STYLES/////////
+.lead {
     display: inline;
 }
 .paragraph {
     display: inline;
 }
 
-//Scaffolding
+/////////SCAFFOLDING STYLES/////////
 .col {
     font-size: $h5mobile;
     margin: 10px 0;

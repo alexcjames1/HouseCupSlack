@@ -1,14 +1,14 @@
 @import "../../css/theme.scss";
 
-//Scaffolding
+/////////SCAFFOLDING/////////
 .section {
-    background-color: $secondaryBackgroundColor;
+    background-color: $darkSection;
 }
 .section .row {
     align-items: center;
 }
 
-//Text Container Styles
+/////////TEXT CONTAINER STYLES/////////
 .teamInfo {
     margin-top: 30px;
 }
@@ -19,7 +19,7 @@
     }
 }
 
-//Text Styles
+/////////SUBTITLE/////////
 .subTitle {
     font-weight: $bold;
     color: $tertiaryColor;
@@ -30,6 +30,8 @@
         font-size: $h4;
     }
 }
+
+/////////TITLE/////////
 .title {
     font-size: $h2mobile;
     color: $baseFontColor;
@@ -40,6 +42,8 @@
         font-size: $h2;
     }
 }
+
+/////////CONTENT/////////
 .content {
     color: $secondaryColor;
     font-size: $bodyMobile;

@@ -1,5 +1,12 @@
 @import "../../css/theme.scss";
 
+/////////ROW STYLES/////////
+.legal {
+    align-items:  center;
+    margin-top: -50px;
+}
+
+/////////ICON STYLES/////////
 .icon {
     display: inline;
     padding: 12px;
@@ -8,19 +15,17 @@
 .icon a {
     color: $darkBackground;
 }
-.socialMedia {
-    text-align: right;
-}
-.legal {
-    align-items:  center;
-}
+
+/////////COPYRIGHT STYLES/////////
 .copyright a{
     font-size: 14px;
     color: $darkBackground;
 }
-.legal {
-    margin-top: -50px;
-}
 .audentio {
     text-decoration: underline;
+}
+
+/////////SOCIAL MEDIA/////////
+.socialMedia {
+    text-align: right;
 }

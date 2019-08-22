@@ -1,6 +1,6 @@
 @import "../../css/theme.scss";
 
-//animations
+/////////ANIMATION/////////
 @keyframes float {
   0% {
     transform: translate(0, 0);
@@ -36,8 +36,12 @@
     transform: translate(50px, 0);
   }
 }
+@keyframes popout {
+        from{transform:scale(0)}
+        to{transform:scale(1)}
+    }
 
-// animation: float 15s linear infinite alternate;
+/////////BACKGROUND STYLES/////////
 .HouseCupHero {
      background: url("./images/hero-bg.jpg");
      background-repeat: no-repeat;
@@ -46,19 +50,26 @@
      position: relative;
 }
 
-//Hero CTA content
+/////////SCAFFOLDING/////////
 .row {
     position: relative;
     margin-top: 150px;
-    margin-bottom: 20px;
-    z-index: 10;
+    margin-bottom: 170px;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .row {
         margin-top: 250px;
-        margin-bottom: 100px;
+        margin-bottom: 290px;
     }
 }
+@media (min-width: 1770px) {
+    .row {
+        margin-top: 250px;
+        margin-bottom: 175px;
+    }
+}
+
+/////////HEADER STYLES/////////
 .header {
     font-size: $heroBigFontMobile;
     font-weight: $black;
@@ -69,6 +80,8 @@
         font-size: $heroBigFont;
     }
 }
+
+/////////BODY STYLES/////////
 .body {
     font-size: $h5mobile;
     color: #424242;
@@ -81,18 +94,14 @@
     }
 }
 
-.slackButton {
-    @include slackButtonHero;
-}
-.slackButton:hover {
-    @include slackButtonHeroHover;
-}
+/////////BUTTON SLACK LOGO/////////
 .slackLogo {
     width: 18px;
     margin-right: 7px;
     margin-bottom: -3px;
 }
 
+/////////FOREGROUND/////////
 .foreground {
     position: absolute;
     right: 0;
@@ -165,6 +174,7 @@
     }
 }
 
+/////////MIDDLEGROUND/////////
 .middleground {
     position: absolute;
     bottom: 0;
@@ -189,7 +199,7 @@
     }
 }
 
-
+/////////BACKGROUND/////////
 .background {
     position: absolute;
     bottom: 0;
@@ -209,7 +219,7 @@
     }
 }
 
-//crest styles
+/////////CREST/////////
 .crestMedia {
     width: 10%;
 }
@@ -218,8 +228,6 @@
         width: 70%;
     }
 }
-
-
 .crest {
     display: none;
 }
@@ -229,7 +237,7 @@
     }
 }
 
-//crest element general styles
+/////////CREST ELEMENTS SHARED STYLES/////////
 .userSm {
     width: 50px;
     position: absolute;
@@ -249,7 +257,36 @@
     width: 70px;
 }
 
-//green group
+/////////RED GROUP/////////
+.boyRed {
+    margin-bottom: 355px;
+    margin-left: -65px;
+    animation: popout .5s ease;
+}
+.girlRed2 {
+    margin-bottom: 290px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 100;
+    animation: popout 1s ease;
+}
+.girlRed1 {
+    margin-bottom: 235px;
+    margin-left: -150px;
+}
+.swirl {
+    width: 80px;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 325px;
+    margin-left: -115px;
+}
+.tenRed {
+    margin-bottom: 295px;
+    margin-left: -141px;
+}
+
+/////////GREEN GROUP/////////
 .boyGreen {
     margin-bottom: 330px;
     margin-left: -75px;
@@ -270,7 +307,7 @@
     margin-left: -45px;
 }
 
-//blue group
+/////////BLUE GROUP/////////
 .boyBlue {
     position: relative;
     z-index: 100;
@@ -317,7 +354,7 @@
     margin-left: -160px;
 }
 
-//yellow group
+/////////YELLOW GROUP/////////
 .boyYellow2 {
     margin-bottom: 130px;
     margin-left: -240px;
@@ -343,29 +380,29 @@
     width: 60px;
 }
 
-//red group
-.boyRed {
-    margin-bottom: 355px;
-    margin-left: -65px;
+/////////CLOUDS/////////
+.cloudOne {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 600px;
+    margin-right: 120px;
+    animation: float 15s linear infinite alternate;
 }
-.girlRed2 {
-    margin-bottom: 290px;
-    margin-left: 40px;
-    position: relative;
-    z-index: 100;
-}
-.girlRed1 {
-    margin-bottom: 235px;
-    margin-left: -150px;
-}
-.swirl {
-    width: 80px;
+.cloudTwo {
     position: absolute;
     bottom: 0;
-    margin-bottom: 325px;
-    margin-left: -115px;
+    margin-bottom: 200px;
+    margin-left: 650px;
+    animation: float 15s linear infinite alternate;
 }
-.tenRed {
-    margin-bottom: 295px;
-    margin-left: -141px;
+.cloudThree {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 650px;
+    margin-left: 50px;
+    animation: float 15s linear infinite alternate;
 }

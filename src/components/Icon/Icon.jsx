@@ -10,7 +10,7 @@ export default class Button extends Component {
         // size: big, small, xsmall, normal
 
         return(
-            <i style={{ fontSize: fontSize, color: color }} class={classy(style.icon, style.mdi, style['mdi-' + children], className )}></i>
+            <i style={{ fontSize: fontSize, color: color }} className={classy(style.icon, style.mdi, style['mdi-' + children], className )}></i>
         );
     }
 }

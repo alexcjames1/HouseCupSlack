@@ -1,40 +1,6 @@
-//mixins
-//button
-@mixin Button {
-    padding: 15px 8px;
-    border-radius: 4px;
-    border-color: transparent;
-}
-@mixin ButtonThin {
-    padding: 10px 15px;
-    border-radius: 6px;
-    border-color: transparent;
-}
-@mixin slackButtonHero {
-    padding: 13px 25px;
-    background-color: #fff;
-    border-left: 1px #d9d9d9;
-    border-right: 1px #d9d9d9;
-    border-top: 1px #d9d9d9;
-    border-bottom: 3px #d9d9d9;
-    border-style: solid;
-    border-radius: 4px;
-    font-family: lato;
-    font-size: 14px;
-    color: #424242;
-    font-weight: 900;
-}
-@mixin slackButtonHeroHover {
-    background-color: #fcfcfc;
-    border-left: 1px #d6d6d6;
-    border-right: 1px #d6d6d6;
-    border-top: 1px #d6d6d6;
-    border-bottom: 3px #d6d6d6;
-    border-style: solid;
-    border-radius: 4px;
-}
+/////////MIXINS/////////
 
-//icon
+/////////ICONS/////////
 @mixin icon {
     color: #fff;
     height: 50px;
@@ -49,8 +15,7 @@
     margin-top: -25px;
     margin-left: 18px;
 }
-
-//border
+/////////BORDER/////////
 @mixin border {
     border-color: $borderColor;
     border-radius: 15px;
@@ -64,30 +29,30 @@
 }
 
 
-//background-colors
+/////////BACKGROUND COLORS/////////
 $primaryColor: #D5C0A3;
-$secondaryBackgroundColor: #87b7bf;
-$modalBackground: #fff;
+$darkSection: #87b7bf;
+$lightSection: #fff;
 
-//font-families
+/////////FONT FAMILIES/////////
 $fontFamily: "Poppins";
 
-//font-colors
+/////////FONT COLORS/////////
 $baseFontColor: #212121;
 $secondaryColor: #424242;
 $tertiaryColor: #337B9C;
 $darkBackground: #fff;
 
-//button colors
+/////////BUTTON COLORS/////////
 $lightButton: #fff;
 $darkButton: #347C9D;
 
-//font-weights
+/////////FONT WEIGHTS/////////
 $normal: 400;
 $bold: 600;
 $black: 700;
 
-//font-sizes--Desktop
+/////////FONT SIZES--DESKTOP/////////
 $heroBigFont: 3.75rem;
 $h1: 2.875rem;
 $h2: 2.125rem;
@@ -101,7 +66,7 @@ $body: 1rem;
 
 $subtitle: 0.875rem;
 
-//font-sizes--Mobile
+/////////FONT SIZES--MOBILE/////////
 $heroBigFontMobile: 2.875rem;
 $h1mobile: 2.125rem;
 $h2mobile: 2rem;
@@ -115,23 +80,21 @@ $bodyMobile: 0.75rem;
 
 $subtitleMobile: 0.75rem;
 
-//special-properties
+/////////BOX SHADOW/////////
 $boxShadow: 0 5px 15px 0 rgba(0,0,0,0.07),
             0 15px 35px 0 rgba(50,50,93,0.1);
 
-//border-styles
+/////////BORDER COLOR/////////
 $borderColor: #d9d7d7;
 
-//button-responsiveness
-$shadowHover: 0 5px 15px 0 rgba(0,0,0,0.07),
-              0 15px 35px 0 rgba(50,50,93,0.1);
+/////////BUTTON UNDERLINE/////////
 $underlineHover: underline;
 
-//help-icon-color
+/////////MODAL COLOR STYLES/////////
 $helpColor: #F7BC14;
 
 //get-icon-color
-$getColor: #84C5B4;
+$selfColor: #84C5B4;
 
 //contribute-icon-color
 $contributeColor: #337B9C;

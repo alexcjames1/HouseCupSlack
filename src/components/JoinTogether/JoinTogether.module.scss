@@ -1,13 +1,14 @@
 @import "../../css/theme.scss";
 
-//Scaffolding
+/////////SCAFFOLDING/////////
 .section .row{
     align-items: center;
 }
 .section {
     padding-top: 40px;
 }
-//Media Styles
+
+/////////MEDIA STYLES/////////
 .media {
     margin-top: 30px;
 }
@@ -19,7 +20,7 @@
     }
 }
 
-//Text Styles
+/////////SUBTITLE STYLES/////////
 .subTitle {
     color: $tertiaryColor;
     font-size: $h4mobile;
@@ -29,6 +30,8 @@
         font-size: $h4;
     }
 }
+
+/////////TITLE STYLES/////////
 .title {
     color: #212121;
     font-size: $h1mobile;
@@ -40,6 +43,8 @@
         font-size: $h1;
     }
 }
+
+/////////CONTENT STYLES/////////
 .content {
     color: #424242;
     font-size: $bodyMobile;

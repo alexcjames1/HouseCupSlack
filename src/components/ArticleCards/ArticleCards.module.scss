@@ -1,6 +1,6 @@
 @import "../../css/theme.scss";
 
-/////////TEXT STYLES/////////
+/////////TITLE STYLES/////////
 .title {
     text-align: center;
     font-size: $h3mobile;
@@ -12,14 +12,25 @@
     }
 }
 
+/////////MEDIA STYLES/////////
+.media {
+    width: 125px;
+    margin-right: 150px;
+}
+
+/////////BODY STYLES/////////
+.body {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
 /////////CARD STYLES/////////
+.card {
+    padding: 32px;
+}
 .teamBuilding {
     margin-bottom: 15px;
-}
-@media (min-width: 575px) {
-    .teamBuilding {
-        margin-bottom: 0px;
-    }
 }
 @media (min-width: 575px) {
     .teamBuilding {

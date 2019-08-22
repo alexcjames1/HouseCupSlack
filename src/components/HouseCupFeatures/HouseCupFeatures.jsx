@@ -17,7 +17,7 @@ export default class HouseCupFeatures extends Component {
 
                 <Row>
                     <Col xs="12" sm="4" className={style.col}>
-                        <h5 className={style.boldText}>Add and remove points. </h5>
+                        <h5 className={style.lead}>Add and remove points. </h5>
                         <p className={style.paragraph}>
                             Nam feugiat lorem non ullamcorper hendrerit. Aenean leo metus, lacinia ut suscipit eu.
                         </p>

@@ -34,7 +34,7 @@
 }
 .col {
     border-top: solid;
-    border-color: $borderColor;
+    border-color: #d9d7d7;
     border-width: 1px;
     margin-top: 45px;
     padding-top: 35px;
@@ -92,14 +92,14 @@
 }
 
 /////////BUTTON STYLES/////////
-.learnMoreButton {
-    background-color: $darkButton;
-    color: #fff;
-    @include ButtonThin;
-}
-.learnMoreButton:hover {
-    box-shadow: $shadowHover;
-}
+// .learnMoreButton {
+//     background-color: $darkButton;
+//     color: #fff;
+//     @include ButtonThin;
+// }
+// .learnMoreButton:hover {
+//     box-shadow: $shadowHover;
+// }
 
 /////////CARD STYLES/////////
 .card {
@@ -112,7 +112,7 @@
 }
 .card:hover {
     border-color: transparent;
-    background-color: #fff;
+    background-color: $lightSection;
     box-shadow: $boxShadow;
 }
 .card .cardContent {

@@ -32,7 +32,9 @@ export default class Footer__SlackCTA extends Component {
                     </div>
                     <div className={style.footer}>
                         <Modal  classname={style.modal} trigger={
-                            <Button kind="dark" icon="slack">Add to slack</Button>
+                            <Button kind="dark" icon="slack">
+                                Add to slack
+                            </Button>
                         }>
                             <DownloadModal />
                         </Modal>

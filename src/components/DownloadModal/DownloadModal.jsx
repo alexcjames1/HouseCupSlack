@@ -4,6 +4,7 @@ import classy from '../../utils/classy';
 import {Col, Row, Container } from 'react-bootstrap';
 import { Section } from '../../components';
 import { Card } from '../../components';
+import { Icon } from '../../components';
 
 export default class downloadModal extends React.Component {
 
@@ -23,16 +24,32 @@ export default class downloadModal extends React.Component {
 
                     <div className={style.row}>
 
-                        <div className={style.col}>
-                            <Card mediaClass={style.media} cardClass={style.card} contentClass={style.mediaContent} align="stretch" buttonClass={classy(style.button, style.helpButton)} title="How We Do: Team Building" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
+                        <div>
+                            <div className={classy(style.icon, style.helpIcon)}><i className="mdi mdi-comment-question-outline" /></div>
+                            <div className={style.col}>
+                                <Card mediaClass={style.media} cardClass={style.card} contentClass={style.mediaContent} align="stretch" buttonClass={classy(style.button, style.helpButton)} title="I need help" paragraph="Need this installed for you? We do not offer a SaaS yet." button="Get help" />
+                            </div>
                         </div>
 
-                        <div className={style.col}>
-                            <Card mediaClass={style.media} cardClass={style.card} contentClass={style.mediaContent} align="stretch" buttonClass={classy(style.button, style.helpButton)} title="How We Do: Team Building" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut m liquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
+                        <div>
+                            <div className={classy(style.icon, style.selfIcon)}><i className="mdi mdi-download" /></div>
+                            <div className={style.col}>
+                                <Card mediaClass={style.media} cardClass={style.card} contentClass={style.mediaContent} align="stretch" buttonClass={classy(style.button, style.selfButton)} title="I can do it myself" paragraph="Here are some instructions for getting this done on your own." button="Read Instructions" />
+                            </div>
                         </div>
 
-                        <div className={style.col}>
-                            <Card mediaClass={style.media} cardClass={style.card} contentClass={style.mediaContent} align="stretch" buttonClass={classy(style.button, style.helpButton)} title="How We Do: Team Building" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
+                        <div>
+                            <div className={classy(style.icon, style.contributeIcon)}><i className="mdi mdi-square-edit-outline" /></div>
+                            <div className={style.col}>
+                                <Card mediaClass={style.media} cardClass={style.card} contentClass={style.mediaContent} align="stretch" buttonClass={classy(style.button, style.contributeButton)} title="Contribute" paragraph="Please also consider contributing to this open source project." button="Contribute" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <div className={classy(style.icon, style.shareIcon)}><i className="mdi mdi-share-variant" /></div>
+                            <div className={style.col}>
+                                <Card mediaClass={style.media} cardClass={style.card} contentClass={style.mediaContent} align="stretch" buttonClass={classy(style.button, style.shareButton)} title="Share" paragraph="Want to say thanks or share with your friends?" button="Share" />
+                            </div>
                         </div>
 
                     </div>

@@ -1,6 +1,6 @@
 @import "../../css/theme.scss";
 
-//Header Styles
+/////////HEADER STYLES/////////
 .header {
     background: #fce7cf;
     margin-bottom: -4.375em;
@@ -11,13 +11,19 @@
     z-index: 10000;
     color: $baseFontColor;
 }
+
+/////////SCAFFOLDING/////////
 .row {
     align-items: center;
 }
+
+/////////LOGO STYLES/////////
 .logo {
     padding-top: 9px;
     margin-left: -5px;
 }
+
+/////////NAVIGATION STYLES/////////
 .navigation {
     text-align: right;
 }

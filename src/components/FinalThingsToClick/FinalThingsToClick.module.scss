@@ -48,9 +48,7 @@
         margin-bottom: 0px;
     }
 }
-.modal {
-    display: inline-block;
-}
+
 /////////HEADING STYLES/////////
 .title {
     font-size: $h2mobile;
@@ -88,62 +86,6 @@
         font-size: $subtitle;
         padding-top: 10px;
     }
-}
-
-/////////BUTTON STYLES/////////
-.button {
-    padding: 10px 25px;
-    font-family: lato;
-    font-size: 14px;
-    font-weight: 900;
-}
-.button i {
-    font-size: 20px;
-    margin-right: 3px;
-}
-.slackButton {
-    background-color: #337B9C;
-    border-left: 1px #225b75;
-    border-right: 1px #225b75;
-    border-top: 1px #225b75;
-    border-bottom: 3px #225b75;
-    border-style: solid;
-    border-radius: 4px;
-    color: #fff;
-    margin-right: 3px;
-}
-.slackButton:hover {
-    background-color: #306f8c;
-    border-left: 1px #1b4d63;
-    border-right: 1px #1b4d63;
-    border-top: 1px #1b4d63;
-    border-bottom: 3px #1b4d63;
-    border-style: solid;
-    border-radius: 4px;
-}
-.slackLogo {
-    width: 18px;
-    margin-right: 7px;
-    margin-bottom: -3px;
-}
-.githubButton {
-    background-color: #fff;
-    border-left: 1px #d9d9d9;
-    border-right: 1px #d9d9d9;
-    border-top: 1px #d9d9d9;
-    border-bottom: 3px #d9d9d9;
-    border-style: solid;
-    border-radius: 4px;
-    color: #424242;
-}
-.githubButton:hover {
-    background-color: #fcfcfc;
-    border-left: 1px #d6d6d6;
-    border-right: 1px #d6d6d6;
-    border-top: 1px #d6d6d6;
-    border-bottom: 3px #d6d6d6;
-    border-style: solid;
-    border-radius: 4px;
 }
 
 /////////FOOTER STYLES/////////

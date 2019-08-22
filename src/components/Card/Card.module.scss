@@ -2,19 +2,20 @@
 
 /////////CARD STYLES/////////
 .card {
-    border-radius: 4px;
+    border-radius: 8px;
     align-items: center;
     border-style: solid;
     border-color: $borderColor;
     border-width: 1px;
     min-width: 0;
+    display: block;
 
     &.align-top {align-items: flex-start;}
     &.align-stretch {align-items: stretch;}
 }
 .card:hover {
     box-shadow: $boxShadow;
-    border-style: none;
+    border-color: transparent;
 }
 @media (min-width: 768px) {
     .card {
@@ -27,49 +28,38 @@
     display: flex;
     margin-right: 1.25rem;
     align-items: center;
-    padding: 1.25rem;
-}
-
-/////////MEDIA FIGURE/////////
-.mediaFigure {
-    height: 105px;
-    width: 300px;
-    margin-right: 30px;
-    background-color: lightgrey;
+    padding: 2px;
 }
 
 /////////MEDIA HEADING/////////
 .mediaHeading {
     font-weight: $bold;
-    font-size: $h5mobile;
+    font-size: $h6mobile;
 }
 @media (min-width: 768px) {
     .mediaHeading {
-        font-size: $h5;
+        font-size: $h6;
     }
+}
+
+/////////MEDIA CONTENT/////////
+.mediaContent {
+    color: #212121;
 }
 
 /////////MEDIA BODY/////////
 .mediaBody {
     color: $baseFontColor;
-    font-size: $bodyMobile;
-}
-@media (min-width: 768px) {
-    .mediaBody {
-        font-size: $body;
-    }
+    font-size: 14px;
+    margin-top: 7px;
 }
 
 /////////MEDIA BUTTON/////////
 .mediaButton {
     color: $tertiaryColor;
     font-size: 12px;
-    font-weight: 900;
-    text-transform: uppercase;
+    font-weight: 600;
 }
 .mediaButton:hover {
     text-decoration: $underlineHover;
-}
-.mediaContent {
-    color: #212121;
 }

@@ -1,11 +1,6 @@
 @import "../../css/theme.scss";
 
-.button {
-    @include slackButtonHero;
-}
-.button:hover {
-    @include slackButtonHeroHover;
-}
+/////////LOGO STYLES/////////
 .slackLogo {
     width: 18px;
     margin-right: 7px;

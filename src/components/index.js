@@ -10,7 +10,6 @@ export { default as Header__nav } from './Header__nav';
 export { default as Logo } from './Logo';
 
 export { default as Modal } from './Modal';
-export { default as ModalCard } from './ModalCard';
 export { default as DownloadModal } from './DownloadModal';
 export { default as AudentioModal } from './AudentioModal';
 
