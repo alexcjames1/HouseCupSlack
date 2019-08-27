@@ -3,12 +3,15 @@ import classy from '../../utils/classy';
 import style from './JoinTogether.module.scss';
 import slackBot from './images/slack-bot.png';
 import {Col, Row } from 'react-bootstrap';
-import { Section } from '../../components';
+import { Section, Crest } from '../../components';
 
 export default class JoinTogether extends Component {
     render() {
         return(
             <Section className={style.section} kind="dark">
+
+                <Crest className={style.crest}/>
+
                 <Row className={style.row}>
 
                     <Col xs="12" sm="6">

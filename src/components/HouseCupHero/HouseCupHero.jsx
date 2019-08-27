@@ -51,13 +51,16 @@ export default class HouseCupHero extends Component {
                                 <p>In gravida ligula facilisis odio convallis, quis mollis nibh dignissim. In vehicula placerat malesuada. Praesent pharetra tincidunt est feugiat pharetra.</p>
                             </div>
                             <div className={style.footer}>
-                                <Modal trigger={
-                                    <Button>
+                                <Modal className={style.modal} trigger={
+                                    <Button className={style.slackButton}>
                                         <img src={slackLogo} className={style.slackLogo}/>Add to Slack
                                     </Button>}
                                     >
                                     <DownloadModal />
                                 </Modal>
+                                <Button className={style.appWorks}>
+                                    How it works
+                                </Button>
                             </div>
                         </Col>
                         <Col xs="12" sm="6" className={style.crest}>

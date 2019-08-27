@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 export default class Card extends Component {
     render() {
-        const {image, title, paragraph, column, textAlign, button, buttonClass, align, cardClass, mediaClass, contentClass, imageClass, bodyClass} = this.props;
+        const {image, title, paragraph, column, textAlign, button, buttonClass, align, cardClass, mediaClass, contentClass, imageClass, bodyClass, headingClass} = this.props;
         // align: top, center, stretch
 
         return(
@@ -18,7 +18,7 @@ export default class Card extends Component {
                         <img className={imageClass} src={image} />
                     </div>
                     <div className={classy(style.mediaContent, contentClass)}>
-                        {title ? <Heading tag="h6" className={style.mediaHeading}>{title}</Heading> : ''}
+                        {title ? <Heading tag="h6" className={headingClass}>{title}</Heading> : ''}
                         {paragraph ? <p className={classy(style.mediaBody, bodyClass)}>{paragraph}</p> : ''}
                         {button ? <div className={classy(style.mediaButton, buttonClass)}>{button}</div> : ''}
                     </div>

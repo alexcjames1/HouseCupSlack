@@ -8,7 +8,7 @@
 }
 @media (min-width: 575px) {
     .title {
-        font-size: $h3;
+        font-size: 28px;
     }
 }
 
@@ -18,11 +18,17 @@
     margin-right: 150px;
 }
 
+.heading {
+    font-size: 18px;
+    font-weight: 900;
+}
+
 /////////BODY STYLES/////////
 .body {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4em;
 }
 
 /////////CARD STYLES/////////
@@ -40,5 +46,5 @@
 }
 
 .button {
-
+    font-size: 16px;
 }

@@ -77,13 +77,36 @@
 }
 .crest {
     height: 450px;
+    display: none;
 }
-
+@media (min-width: 768px) {
+    .crest {
+        height: 450px;
+        display: block;
+    }
+}
+.slackButton {
+    display: none;
+}
+@media (min-width: 768px) {
+    .slackButton {
+        display: inline;
+    }
+}
+.appWorks {
+    display: inline;
+}
+@media (min-width: 768px) {
+    .appWorks {
+        display: none;
+    }
+}
 /////////HEADER STYLES/////////
 .header {
     font-size: $heroBigFontMobile;
     font-weight: $black;
     color: $baseFontColor;
+    line-height: 1.2em;
 }
 @media (min-width: 768px){
     .header {

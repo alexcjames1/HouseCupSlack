@@ -1,7 +1,7 @@
 @import "../../css/theme.scss";
 
 /////////SCAFFOLDING/////////
-.section .row{
+.row{
     align-items: center;
 }
 .section {
@@ -21,7 +21,14 @@
         margin-top: 0px;
     }
 }
-
+.crest {
+    display: block;
+}
+@media (min-width: 768px) {
+    .crest {
+        display: none;
+    }
+}
 /////////SUBTITLE STYLES/////////
 .subTitle {
     color: $tertiaryColor;

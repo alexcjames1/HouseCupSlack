@@ -17,12 +17,12 @@ export default class ArticleCards extends Component {
                 <Row>
                     <Col xs="12" sm="6" className={style.teamBuilding}>
                         <a href="#">
-                            <Card cardClass={style.card} imageClass={style.media} bodyClass={style.body} buttonClass={style.button} image={block} title="How We Do: Team Building" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
+                            <Card cardClass={style.card} imageClass={style.media} headingClass={style.heading} bodyClass={style.body} buttonClass={style.button} image={block} title="How We Do: Team Building" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read more" />
                         </a>
                     </Col>
                     <Col xs="12" sm="6" className={style.funStuff}>
                         <a href="#">
-                            <Card  cardClass={style.card} imageClass={style.media} bodyClass={style.body} image={block} title="Focus on the Fun Stuff" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read More" />
+                            <Card  cardClass={style.card} imageClass={style.media} headingClass={style.heading} bodyClass={style.body} buttonClass={style.button} image={block} title="Focus on the Fun Stuff" paragraph="Aliquam sed nulla sollicitudin, cursus ante et, dictum lacus. Cras ut magna quis tortor." button="Read more" />
                         </a>
                     </Col>
                 </Row>

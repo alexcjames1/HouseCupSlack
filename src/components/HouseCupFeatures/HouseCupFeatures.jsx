@@ -24,14 +24,14 @@ export default class HouseCupFeatures extends Component {
                     </Col>
 
                     <Col xs="12" sm="4" className={style.col}>
-                        <h5 className={style.boldText}>Stay up to  date with  stats. </h5>
+                        <h5 className={style.lead}>Stay up to  date with  stats. </h5>
                         <p className={style.paragraph}>
                             Nam feugiat lorem non ullamcorper hendrerit. Aenean leo metus, lacinia ut suscipit eu.
                         </p>
                     </Col>
 
                     <Col xs="12" sm="4" className={style.col}>
-                        <h5 className={style.boldText}>Start and end semesters. </h5>
+                        <h5 className={style.lead}>Start and end semesters. </h5>
                         <p className={style.paragraph}>
                             Nam feugiat lorem non ullamcorper hendrerit. Aenean leo metus, lacinia ut suscipit eu.
                         </p>
