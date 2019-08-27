@@ -10,10 +10,12 @@
     border-color: $borderColor;
     width: 30%;
     padding: 15px 0;
+    font-size: $h5mobile;
 }
 @media (min-width: 575px) {
     .title {
         width: 15%;
+        font-size: $h5;
     }
 }
 

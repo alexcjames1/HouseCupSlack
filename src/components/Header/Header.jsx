@@ -2,8 +2,7 @@ import React, {Component} from 'react';
 import style from './Header.module.scss';
 import classy from '../../utils/classy';
 import {Col, Row } from 'react-bootstrap';
-import { Section } from '../../components';
-import { Logo, Header__nav } from '../../components';
+import { Section, Logo, Header__nav } from '../../components';
 
 
 export default class Header extends Component {

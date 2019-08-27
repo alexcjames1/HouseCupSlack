@@ -2,9 +2,7 @@ import React, {Component} from 'react';
 import style from './DownloadModal.module.scss';
 import classy from '../../utils/classy';
 import {Col, Row, Container } from 'react-bootstrap';
-import { Section } from '../../components';
-import { Card } from '../../components';
-import { Icon } from '../../components';
+import { Section, Card, Icon } from '../../components';
 
 export default class downloadModal extends React.Component {
 
@@ -61,6 +59,7 @@ export default class downloadModal extends React.Component {
                             <span className={classy(style.buttonResponsive, style.donate)}>Donate</span><i className="mdi mdi-arrow-right" />
                         </a>
                     </div>
+                    
                 </div>
 
         </Section>

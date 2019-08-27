@@ -1,408 +1,70 @@
 @import "../../css/theme.scss";
 
 /////////ANIMATION/////////
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(5px, 0);
-  }
-  20% {
-    transform: translate(10px, 0);
-  }
-  30% {
-    transform: translate(15px, 0);
-  }
-  40% {
-    transform: translate(20px, 0);
-  }
-  50% {
-    transform: translate(25px, 0);
-  }
-  60% {
-    transform: translate(30px, 0);
-  }
-  70% {
-    transform: translate(35px, 0);
-  }
-  80% {
-    transform: translate(40px, 0);
-  }
-  90% {
-    transform: translate(45px, 0);
-  }
-  100% {
-    transform: translate(50px, 0);
-  }
-}
 @keyframes popout {
         from{transform:scale(0)}
         to{transform:scale(1)}
     }
 
-/////////BACKGROUND STYLES/////////
-.HouseCupHero {
-     background: url("./images/hero-bg.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     overflow: hidden;
-     position: relative;
-}
-
-/////////SCAFFOLDING/////////
-.row {
-    position: relative;
-    margin-top: 150px;
-    margin-bottom: 170px;
-}
-@media (min-width: 768px) {
-    .row {
-        margin-top: 250px;
-        margin-bottom: 290px;
-    }
-}
-@media (min-width: 1770px) {
-    .row {
-        margin-top: 250px;
-        margin-bottom: 175px;
-    }
-}
-
-/////////HEADER STYLES/////////
-.header {
-    font-size: $heroBigFontMobile;
-    font-weight: $black;
-    color: $baseFontColor;
-}
-@media (min-width: 768px){
-    .header {
-        font-size: $heroBigFont;
-    }
-}
-
-/////////BODY STYLES/////////
-.body {
-    font-size: $h5mobile;
-    color: #424242;
-    padding-bottom: 15px;
-    max-width: 80%;
-}
-@media (min-width: 768px){
-    .body {
-        font-size: $h5;
-    }
-}
-
-/////////BUTTON SLACK LOGO/////////
-.slackLogo {
-    width: 18px;
-    margin-right: 7px;
-    margin-bottom: -3px;
-}
-
-/////////FOREGROUND/////////
-.foreground {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-.tree {
-    visibility: hidden;
-}
-@media (min-width: 1470px) {
-    .tree {
-        margin-bottom: -20px;
-        visibility: visible;
-    }
-}
-.mainDarkHill {
-    position: relative;
-    bottom: 0;
-    margin-bottom: -10px;
-    margin-right: -50px;
-}
-@media (min-width: 768px) {
-    .mainDarkHill {
-        position: relative;
-        bottom: 0;
-        margin-bottom: -30px;
-        margin-right: -50px;
-    }
-}
-.castle {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    margin-bottom: 34px;
-    margin-right: -20px;
-}
-@media (min-width: 768px) {
-    .castle {
-        width: 35%;
-        margin-bottom: 125px;
-        margin-right: -20px;
-    }
-}
-@media (min-width: 1000px) {
-    .castle {
-        width: 35%;
-        margin-bottom: 143px;
-        margin-right: -20px;
-    }
-}
-@media (min-width: 1200px) {
-    .castle {
-        width: 35%;
-        margin-bottom: 160px;
-        margin-right: -20px;
-    }
-}
-@media (min-width: 1300px) {
-    .castle {
-        width: 35%;
-        margin-bottom: 175px;
-        margin-right: -20px;
-    }
-}
-@media (min-width: 1450px) {
-    .castle {
-        width: 35%;
-        margin-bottom: 190px;
-        margin-right: -20px;
-    }
-}
-
-/////////MIDDLEGROUND/////////
-.middleground {
+// animation: popout .5s ease;
+.crestUser {
     position: absolute;
     bottom: 0;
-    margin-bottom: -150px;
 }
-.frontTreeline {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 35px;
-}
-@media (min-width: 768px) {
-    .frontTreeline {
-        margin-bottom: 0px;
-    }
-}
-.backTreeline {
-    margin-bottom: 50px;
-}
-@media (min-width: 768px) {
-    .backTreeline {
-        margin-bottom: -62px;
-    }
-}
-
-/////////BACKGROUND/////////
-.background {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.lake {
-    display: none;
-    width: 400px;
-    margin-right: 570px;
-    margin-bottom: 10px;
-}
-@media (min-width: 1500px) {
-    .lake {
-        display: block;
-        margin-right: 570px;
-        margin-bottom: 10px;
-    }
-}
-
-/////////CREST/////////
-.crestMedia {
-    width: 10%;
-}
-@media (min-width: 1770px) {
-    .crestMedia {
-        width: 70%;
-    }
-}
-.crest {
-    display: none;
-}
-@media (min-width: 1770px) {
-    .crest {
-        display: block;
-    }
-}
-
 /////////CREST ELEMENTS SHARED STYLES/////////
 .userSm {
     width: 50px;
-    position: absolute;
-    bottom: 0;
 }
 .userMed {
     width: 70px;
-    position: absolute;
-    bottom: 0;
 }
 .userLg {
     width: 90px;
-    position: absolute;
-    bottom: 0;
-}
-.points {
-    width: 70px;
 }
 
 /////////RED GROUP/////////
 .boyRed {
-    margin-bottom: 355px;
-    margin-left: -65px;
-    animation: popout .5s ease;
+    margin-bottom: 375px;
 }
 .girlRed2 {
-    margin-bottom: 290px;
-    margin-left: 40px;
-    position: relative;
-    z-index: 100;
-    animation: popout .75s ease;
+    margin-bottom: 305px;
+    margin-left: 20px;
 }
 .girlRed1 {
-    margin-bottom: 235px;
+    margin-bottom: 240px;
     margin-left: -150px;
-}
-.swirl {
-    width: 80px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 325px;
-    margin-left: -115px;
-}
-.tenRed {
-    margin-bottom: 295px;
-    margin-left: -141px;
 }
 
 /////////GREEN GROUP/////////
 .boyGreen {
-    margin-bottom: 330px;
-    margin-left: -75px;
+    margin-bottom: -135px;
+    margin-left: 325px;
 }
 .girlGreen {
-    margin-bottom: 240px;
-    margin-left: -160px;
-}
-.arrow {
-    margin-bottom: 335px;
-    margin-left: -130px;
-    width: 70px;
-    position: absolute;
-    bottom: 0;
-}
-.twentyFive {
-    margin-bottom: 400px;
-    margin-left: -45px;
+    margin-bottom: -210px;
+    margin-left: 225px;
 }
 
 /////////BLUE GROUP/////////
 .boyBlue {
-    position: relative;
-    z-index: 100;
-    margin-bottom: 50px;
-    margin-left: -195px;
+    margin-bottom: -460px;
+    margin-left: 225px;
 }
 .girlBlue {
-    margin-bottom: 94px;
-    margin-left: 20px;
-}
-.swirlArrow {
-    margin-bottom: -15px;
-    margin-left: -50px;
-    width: 80px;
-    position: absolute;
-    bottom: 0;
-}
-.emphasisLeft {
-    margin-bottom: 75px;
-    margin-left: -30px;
-    width: 65px;
-    position: absolute;
-    bottom: 0;
-}
-.emphasisRight {
-    margin-bottom: 75px;
-    margin-left: 90px;
-    width: 65px;
-    position: absolute;
-    bottom: 0;
-}
-.fifty {
-    margin-bottom: 20px;
-    margin-left: 15px;
-}
-.crownLg {
-    width: 70px;
-    margin-bottom: 170px;
-    margin-left: -57px;
-}
-.crownSm {
-    width: 50px;
-    margin-bottom: 113px;
-    margin-left: -160px;
+    margin-bottom: -415px;
+    margin-left: 320px;
 }
 
 /////////YELLOW GROUP/////////
 .boyYellow2 {
-    margin-bottom: 130px;
-    margin-left: -240px;
+    margin-bottom: -390px;
+    margin-left: 30px;
 }
 .boyYellow1 {
-    margin-bottom: 115px;
-    margin-left: -150px;
+    margin-bottom: -420px;
+    margin-left: 30px;
 }
 .girlYellow {
-    margin-bottom: 10px;
-    margin-left: -190px;
-}
-.zigzag {
-    margin-bottom: 40px;
-    margin-left: -280px;
-    width: 60px;
-    position: absolute;
-    bottom: 0;
-}
-.tenYellow {
-    margin-bottom: 5px;
-    margin-left: -260px;
-    width: 60px;
-}
-
-/////////CLOUDS/////////
-.cloudOne {
-    position: absolute;
-    z-index: 10;
-    bottom: 0;
-    right: 0;
-    margin-bottom: 600px;
-    margin-right: 120px;
-    animation: float 15s linear infinite alternate;
-}
-.cloudTwo {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 200px;
-    margin-left: 650px;
-    animation: float 15s linear infinite alternate;
-}
-.cloudThree {
-    position: absolute;
-    z-index: 10;
-    bottom: 0;
-    left: 0;
-    margin-bottom: 650px;
-    margin-left: 50px;
-    animation: float 15s linear infinite alternate;
+    margin-bottom: -520px;
+    margin-left: -100px;
 }

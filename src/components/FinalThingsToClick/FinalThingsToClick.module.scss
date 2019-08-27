@@ -30,6 +30,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        align-items: center;
     }
 }
 
@@ -53,13 +54,11 @@
 .title {
     font-size: $h2mobile;
     color: $baseFontColor;
-    margin: 0.5em 0;
 }
 @media (min-width: 768px) {
     .title {
         font-size: $h2;
         color: $baseFontColor;
-        margin: 0.5em 0;
         max-width: 85%;
     }
 }
@@ -69,6 +68,7 @@
     color: $secondaryColor;
     font-size: $body;
     max-width: 550px;
+    margin-top: -6px;
 
 }
 .body {
@@ -79,16 +79,15 @@
 .subTitle {
     color: rgba(43,41,45,0.6);
     font-size: $subtitleMobile;
-    padding-top: 15px;
+    padding-top: 12px;
 }
 @media (min-width: 575px) {
     .subTitle {
         font-size: $subtitle;
-        padding-top: 10px;
     }
 }
 
 /////////FOOTER STYLES/////////
 .footer  {
-    padding-top: 20px;
+    padding-top: 6px;
 }

@@ -51,22 +51,32 @@
 }
 
 /////////SCAFFOLDING/////////
+// .row {
+//     position: relative;
+//     margin-top: 350px;
+//     margin-bottom: 170px;
+//     align-items: center;
+// }
+// @media (min-width: 768px) {
+//     .row {
+//         margin-top: 250px;
+//         margin-bottom: 290px;
+//     }
+// }
+// @media (min-width: 1770px) {
+//     .row {
+//         margin-top: 250px;
+//         margin-bottom: 175px;
+//     }
+// }
 .row {
-    position: relative;
+    positon: absolute;
+    align-items: center;
     margin-top: 150px;
-    margin-bottom: 170px;
+    margin-bottom: 200px;
 }
-@media (min-width: 768px) {
-    .row {
-        margin-top: 250px;
-        margin-bottom: 290px;
-    }
-}
-@media (min-width: 1770px) {
-    .row {
-        margin-top: 250px;
-        margin-bottom: 175px;
-    }
+.crest {
+    height: 450px;
 }
 
 /////////HEADER STYLES/////////
@@ -217,167 +227,6 @@
         margin-right: 570px;
         margin-bottom: 10px;
     }
-}
-
-/////////CREST/////////
-.crestMedia {
-    width: 10%;
-}
-@media (min-width: 1770px) {
-    .crestMedia {
-        width: 70%;
-    }
-}
-.crest {
-    display: none;
-}
-@media (min-width: 1770px) {
-    .crest {
-        display: block;
-    }
-}
-
-/////////CREST ELEMENTS SHARED STYLES/////////
-.userSm {
-    width: 50px;
-    position: absolute;
-    bottom: 0;
-}
-.userMed {
-    width: 70px;
-    position: absolute;
-    bottom: 0;
-}
-.userLg {
-    width: 90px;
-    position: absolute;
-    bottom: 0;
-}
-.points {
-    width: 70px;
-}
-
-/////////RED GROUP/////////
-.boyRed {
-    margin-bottom: 355px;
-    margin-left: -65px;
-    animation: popout .5s ease;
-}
-.girlRed2 {
-    margin-bottom: 290px;
-    margin-left: 40px;
-    position: relative;
-    z-index: 100;
-    animation: popout .75s ease;
-}
-.girlRed1 {
-    margin-bottom: 235px;
-    margin-left: -150px;
-}
-.swirl {
-    width: 80px;
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 325px;
-    margin-left: -115px;
-}
-.tenRed {
-    margin-bottom: 295px;
-    margin-left: -141px;
-}
-
-/////////GREEN GROUP/////////
-.boyGreen {
-    margin-bottom: 330px;
-    margin-left: -75px;
-}
-.girlGreen {
-    margin-bottom: 240px;
-    margin-left: -160px;
-}
-.arrow {
-    margin-bottom: 335px;
-    margin-left: -130px;
-    width: 70px;
-    position: absolute;
-    bottom: 0;
-}
-.twentyFive {
-    margin-bottom: 400px;
-    margin-left: -45px;
-}
-
-/////////BLUE GROUP/////////
-.boyBlue {
-    position: relative;
-    z-index: 100;
-    margin-bottom: 50px;
-    margin-left: -195px;
-}
-.girlBlue {
-    margin-bottom: 94px;
-    margin-left: 20px;
-}
-.swirlArrow {
-    margin-bottom: -15px;
-    margin-left: -50px;
-    width: 80px;
-    position: absolute;
-    bottom: 0;
-}
-.emphasisLeft {
-    margin-bottom: 75px;
-    margin-left: -30px;
-    width: 65px;
-    position: absolute;
-    bottom: 0;
-}
-.emphasisRight {
-    margin-bottom: 75px;
-    margin-left: 90px;
-    width: 65px;
-    position: absolute;
-    bottom: 0;
-}
-.fifty {
-    margin-bottom: 20px;
-    margin-left: 15px;
-}
-.crownLg {
-    width: 70px;
-    margin-bottom: 170px;
-    margin-left: -57px;
-}
-.crownSm {
-    width: 50px;
-    margin-bottom: 113px;
-    margin-left: -160px;
-}
-
-/////////YELLOW GROUP/////////
-.boyYellow2 {
-    margin-bottom: 130px;
-    margin-left: -240px;
-}
-.boyYellow1 {
-    margin-bottom: 115px;
-    margin-left: -150px;
-}
-.girlYellow {
-    margin-bottom: 10px;
-    margin-left: -190px;
-}
-.zigzag {
-    margin-bottom: 40px;
-    margin-left: -280px;
-    width: 60px;
-    position: absolute;
-    bottom: 0;
-}
-.tenYellow {
-    margin-bottom: 5px;
-    margin-left: -260px;
-    width: 60px;
 }
 
 /////////CLOUDS/////////

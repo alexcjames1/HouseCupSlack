@@ -35,7 +35,8 @@
 .title {
     font-size: $h2mobile;
     color: $baseFontColor;
-    margin: 0.5em 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 @media (min-width: 575px) {
     .title {

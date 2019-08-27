@@ -30,7 +30,7 @@ export default class JoinTogether extends Component {
 
                     <Col xs="12" sm="6">
                         <div className={style.media}>
-                            <img src={slackBot} alt="#" />
+                            <img src={slackBot} alt="#" className={style.image}/>
                         </div>
                     </Col>
 

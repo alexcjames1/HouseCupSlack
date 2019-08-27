@@ -8,7 +8,7 @@ export default class Footer extends Component {
     render() {
         return(
             <Section>
-            <Row className={style.legal}>
+                <Row className={style.legal}>
 
                     <Col>
                         <p className={style.copyright}>
@@ -29,7 +29,7 @@ export default class Footer extends Component {
                         </ul>
                     </Col>
 
-            </Row>
+                </Row>
             </Section>
         );
     }
