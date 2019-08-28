@@ -72,16 +72,15 @@
 .row {
     positon: absolute;
     align-items: center;
-    margin-top: 150px;
-    margin-bottom: 200px;
+    margin-top: 175px;
+    margin-bottom: 190px;
 }
 .crest {
-    height: 450px;
     display: none;
 }
 @media (min-width: 768px) {
     .crest {
-        height: 450px;
+        height: 550px;
         display: block;
     }
 }
@@ -196,14 +195,21 @@
     .castle {
         width: 35%;
         margin-bottom: 175px;
-        margin-right: -20px;
+        margin-right: -60px;
     }
 }
 @media (min-width: 1450px) {
     .castle {
         width: 35%;
-        margin-bottom: 190px;
-        margin-right: -20px;
+        margin-bottom: 200px;
+        margin-right: -80px;
+    }
+}
+@media (min-width: 1600px) {
+    .castle {
+        width: 35%;
+        margin-bottom: 200px;
+        margin-right: -60px;
     }
 }
 

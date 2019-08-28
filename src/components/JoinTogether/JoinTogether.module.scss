@@ -64,3 +64,93 @@
         font-size: $body;
     }
 }
+
+.crest {
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 35px;
+    display: block;
+}
+@media (min-width: 768px) {
+    .crest {
+        display: none;
+    }
+}
+
+.crestUser {
+    position: absolute;
+    bottom: 0;
+}
+/////////CREST ELEMENTS SHARED STYLES/////////
+.userSm {
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+.userMed {
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+}
+.userLg {
+    width: 90px;
+    position: absolute;
+    bottom: 0;
+}
+
+.crownLg {
+    width: 65px;
+    position: absolute;
+    bottom: 0;
+}
+.crownSm {
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.points {
+    position: absolute;
+    bottom: 0;
+}
+
+.accent {
+    width: 75px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+
+
+
+// <img src={red1} className={classy(style.userSm, style.red1)}/>
+// <img src={red2} className={classy(style.userMed, style.red2)}/>
+// <img src={red3} className={classy(style.userLg, style.red3)}/>
+// <img src={ten} className={classy(style.points, style.tenRed)}/>
+// <img src={swirl} className={classy(style.accent, style.swirl)}/>
+//
+// <img src={yellow1} className={classy(style.userMed, style.yellow1)}/>
+// <img src={yellow2} className={classy(style.userSm, style.yellow2)}/>
+// <img src={yellow3} className={classy(style.userLg, style.yellow3)}/>
+// <img src={ten} className={classy(style.points, style.tenYellow)}/>
+// <img src={zigzag} className={classy(style.accent, style.zigzag)}/>
+//
+// <img src={blue1} className={classy(style.userLg, style.blue1)}/>
+// <img src={blue2} className={classy(style.userSm, style.blue2)}/>
+// <img src={fifty} className={classy(style.points, style.fifty)}/>
+// <img src={swirlArrow} className={classy(style.accent, style.swirlArrow)}/>
+// <img src={emphasisRight} className={classy(style.accent, style.emphasisRight)}/>
+// <img src={emphasisLeft} className={classy(style.accent, style.emphasisLeft)}/>
+// <img src={crown} className={style.crownLg}/>
+// <img src={crown} className={style.crownSm}/>
+//
+// <img src={green1} className={classy(style.userLg, style.green1)}/>
+// <img src={green2} className={classy(style.userMed, style.green2)}/>
+// <img src={twentyFive} className={classy(style.points, style.twentyFive)}/>
+// <img src={arrow} className={classy(style.accent, style.arrow)}/>

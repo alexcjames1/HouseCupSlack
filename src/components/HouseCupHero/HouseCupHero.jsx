@@ -59,7 +59,9 @@ export default class HouseCupHero extends Component {
                                     <DownloadModal />
                                 </Modal>
                                 <Button className={style.appWorks}>
+                                    <a href="#google">
                                     How it works
+                                    </a>
                                 </Button>
                             </div>
                         </Col>
